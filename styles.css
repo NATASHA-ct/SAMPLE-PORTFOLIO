@@ -1,3 +1,5 @@
 *{
-    box-sizing:border-box ;
+    width: 100%;
+    background-image: url("./Overlay.svg");
+    color: aliceblue;
 }
