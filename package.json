@@ -1,0 +1,26 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webhint": "npx hint .",
+    "stylelint": "npx stylelint **/*.{css,scss} --fix",
+    "eslint": "npx eslint . --fix "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NATASHA-ct/MY-PORTFOLIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NATASHA-ct/MY-PORTFOLIO/issues"
+  },
+  "homepage": "https://github.com/NATASHA-ct/MY-PORTFOLIO#readme",
+  "devDependencies": {
+    "hint": "^6.2.0"
+  }
+}
