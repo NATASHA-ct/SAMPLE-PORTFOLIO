@@ -4,3 +4,32 @@
     color: aliceblue;
 }
 
+/* shape model1 */
+.shape-model1{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: -106px;
+    top: 0px;
+
+    /* Theme 4 / Primary 4 */
+
+    background: #EDECFF;
+    filter: blur(50px);
+
+}
+
+/* shape model2*/
+
+.shape-model2 {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    left: 339px;
+    top: 495px;
+    
+    /* Theme 4 / Primary 4 */
+    
+    background: #EDECFF;
+    filter: blur(50px);
+}
