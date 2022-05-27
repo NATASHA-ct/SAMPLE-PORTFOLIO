@@ -14,15 +14,12 @@ body {
 
 /* toolbar styles header , logo , menubar */
 .header {
-     display:flex;
-     justify-content: space-between;
-     text-align: center;
-     align-items: flex-start;
-     width:90%;
-     margin-top:10px;
-     height: 7vh;
- 
-}
+  width: 100%;
+  height: 78.42px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  }
 
 .logo {
   display: flex;
@@ -32,8 +29,9 @@ body {
   letter-spacing: 0.03em;
   margin-left: 18px;
   width: 81px;
-  height: 60px;
-  font-style: bold;
+  height: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 100px;/**/
   line-height: 30px;
@@ -58,9 +56,8 @@ main {
 }
 
 .myname {
-  width:80%;
-  margin-top: 60px;
-  font-family: "Roboto", sans-serif;
+  width: 70%;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -69,7 +66,9 @@ main {
   left: 0;
   text-align: center;
   letter-spacing: 0.37px;
-  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 h2.position {
@@ -79,8 +78,8 @@ h2.position {
   text-align: center;
   width:75%;
   margin: 0;
-  padding-bottom:40px;
-  font-family: "Roboto", sans-serif;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -91,7 +90,7 @@ h2.position {
 p.introduction {
   width: 327px;
   height: 170px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -103,22 +102,11 @@ p.introduction {
 
 /* list of skills */
 .language {
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  height: 25vh;
- 
- }
+  width: 107px;
+}
 
 .frameworks {
-  border: solid black;
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  height: 20vh;
-  text-align: left;
-
-  
+  width: 140px;
 }
 
 .skills {
@@ -137,7 +125,7 @@ p.introduction {
   display: flex;
   height: 16px;
   margin-right: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -146,33 +134,40 @@ p.introduction {
   color: #9490ff; 
 }
 
-.experience { 
-    border: 2px solid orange;
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    padding-bottom: 20px;
-
-
-
- 
+div.experience {
+  min-width: 75%;
+  height: auto;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+  color: #f5f5ff;
 }
 
 .vector-line {
-  width: 350px;
+  width: 50%;
   height: 0;
 }
 
 .list {
   list-style: none;
   margin: 3px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: #f5f5ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 /* background shapes */
