@@ -14,27 +14,34 @@ body {
 
 /* toolbar styles header , logo , menubar */
 .header {
-  width: 100%;
-  height: 78.42px;
-  display: flex;
-  justify-content: space-between;
-  padding: 4px 0;
+     display:flex;
+     justify-content: space-between;
+     text-align: center;
+     align-items: flex-start;
+     width:90%;
+     margin-top:10px;
+     height: 7vh;
+ 
 }
 
 .logo {
   display: flex;
   align-items: center;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   margin-left: 18px;
   width: 81px;
-  height: 16px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  height: 60px;
+  font-style: bold;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 100px;/**/
+  line-height: 30px;
   color: #fff;
+}
+.dropdown{
+    font-size:40px; 
+   
 }
 
 nav {
@@ -51,28 +58,28 @@ main {
 }
 
 .myname {
-  width: 70%;
+  width:80%;
+  margin-top: 60px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 35px;
   color: #7d73fc;
   right: 0;
   left: 0;
   text-align: center;
   letter-spacing: 0.37px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  
 }
 
 h2.position {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  text-align: center;
+  width:75%;
   margin: 0;
-  padding: 30px;
+  padding-bottom:40px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -96,21 +103,38 @@ p.introduction {
 
 /* list of skills */
 .language {
-  width: 107px;
-}
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 25vh;
+ 
+ }
 
 .frameworks {
-  width: 140px;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 20vh;
+  text-align: left;
+
+  
 }
 
 .skills {
-  width: 106px;
+  display: flex;
+  flex-direction: column;
+  width: 3%;
+  height: 20vh;
+  text-align: left;
+  margin-bottom: 10%;
+
 }
 
+
 .title {
+  
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   height: 16px;
   margin-right: 0;
   font-family: "Roboto", sans-serif;
@@ -119,27 +143,24 @@ p.introduction {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #9490ff;
+  color: #9490ff; 
 }
 
-div.experience {
-  height: auto;
-  padding: 30px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-content: flex-start;
-  text-align: center;
-  color: #f5f5ff;
+.experience { 
+    border: 2px solid orange;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+
+
+ 
 }
 
 .vector-line {
-  width: 50%;
+  width: 350px;
   height: 0;
 }
 
@@ -178,6 +199,7 @@ div.experience {
 /* social site link icons style */
 .social {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 4px 0;
   gap: 12px;
@@ -187,6 +209,7 @@ div.experience {
 
 a {
   text-decoration: none;
+  width: 200px;
 }
 
 a:visited {
