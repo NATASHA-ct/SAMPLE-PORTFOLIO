@@ -11,7 +11,6 @@ body {
   align-items: center;
   min-width: 75%;
 }
-
 /*toolbar styles header , logo , menubar*/
 .header {
   width: 100%;
@@ -29,12 +28,12 @@ body {
   margin-left: 18px;
   width: 81px;
   height: 16px;
-  font-family:""Roboto "";
+  font-family:'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
-  color: #ffffff;
+  color: #fff;
 }
 
 nav {
@@ -52,7 +51,7 @@ main {
 
 .myname {
   width: 70%;
-  font-family: "" Roboto "";
+  font-family:'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -71,10 +70,9 @@ h2.position {
   align-items: center;
   justify-content: center;
   width: 100%;
-  line-height: 87px;
   margin: 0px;
   padding: 30px;
-  font-family: "" Roboto "";
+  font-family:'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -85,7 +83,7 @@ h2.position {
 p.introduction {
   width: 327px;
   height: 170px;
-  font-family: "" Roboto "";
+  font-family:'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -94,7 +92,6 @@ p.introduction {
   color: #c8c8d4;
   gap: 8px;
 }
-
 /*list of skills*/
 .language {
   width: 107px;
@@ -114,7 +111,7 @@ p.introduction {
   justify-content: center;
   height: 16px;
   margin-right: 0;
-  font-family: "" Roboto "";
+  font-family:'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -127,7 +124,7 @@ div.experience {
   min-width: 75%;
   height: auto;
   padding: 30px;
-  font-family: "" Roboto"";
+  font-family:'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -140,21 +137,14 @@ div.experience {
   color: #f5f5ff;
 }
 
-ul {
-  list-style: none;
-}
-
 .vector-line {
   width: 50%;
   height: 0px;
-  left: 16.67%;
-  right: 16.67%;
-  top: 70.83%;
-  bottom: 29.17%;
 }
 
 ul {
-  margin: 3;
+  list-style: none;
+  margin: 3px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -167,7 +157,6 @@ ul {
 }
 
 /*background shapes*/
-
 .shape-model1 {
   position: absolute;
   width: 160px;
@@ -213,4 +202,3 @@ a:hover {
 a:active {
   border: 3px solid #09f21d;
 }
-
