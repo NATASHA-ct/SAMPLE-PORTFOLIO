@@ -56,29 +56,27 @@ nav {
 }
 
 .myname {
-  width: 75%;
+  width: 80%;
+  margin-top: 60px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 35px;
   color: #7d73fc;
   right: 0;
   left: 0;
   text-align: center;
   letter-spacing: 0.37px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 h2.position {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  text-align: center;
+  width:75%;
   margin: 0;
-  padding-top:25px
-  padding-bottom: 30px;
+  padding-bottom:40px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -102,21 +100,32 @@ p.introduction {
 
 /* list of skills */
 .language {
-  width: 107px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 25vh;
 }
 
 .frameworks {
-  width: 140px;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 20vh;
+  text-align: left;
 }
 
 .skills {
-  width: 106px;
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  height: 20vh;
+  text-align: left;
+  margin-bottom: 10%;
 }
 
 .title {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   height: 16px;
   margin-right: 0;
   font-family: "Roboto", sans-serif;
@@ -125,28 +134,19 @@ p.introduction {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #9490ff;
+  color: #9490ff; 
 }
 
 div.experience {
-  width: 70%;;
-  padding: 30px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  align-content: flex-start;
-  text-align: center;
-  color: #f5f5ff;
+    width:70%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .vector-line {
-  width: 50%;
+  width: 350px;
   height: 0;
 }
 
