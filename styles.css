@@ -19,10 +19,7 @@ body{
     height: 78.42px;
     display: flex;
     justify-content: space-between;
-   
-    padding: 4px 0px;
-  
-    
+    padding: 4px 0px; 
      
 } 
 
@@ -32,10 +29,8 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     margin-left: 18px;
-   
     width: 81px;
     height: 16px;
-
     font-family: ''Roboto';';
     font-style: normal;
     font-weight: 500;
@@ -61,25 +56,20 @@ main {
     align-items: center;
 }
 
-/*list of skills*/
 .myname{
     width: 327px;
     height: 55px;
-
     font-family:''Roboto'';
     font-style: normal;
     font-weight: 700;
     font-size:38px; 
     color: #7D73FC; 
-  
     right:0;
     left: 0;
     width: 327px;
     height: 55px;
-
     text-align: center;
     letter-spacing: 0.37px;
-
     flex: none;
     order: 0;
     flex-grow: 0; 
@@ -91,35 +81,44 @@ h2.position{
     display: flex;
     align-items: center;
     justify-content: center;
-        
     width: 100%;
     line-height: 87px;
     margin: 0px;
     padding:30px;
-
     font-family:''Roboto'';
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
-   
-     color: #EDECFF;
+    color: #EDECFF;
    
 }
 
 p.introduction{
     width: 327px;
     height: 170px;
-
     font-family:''Roboto'';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    
-    text-align: center;
+        text-align: center;
     color: #C8C8D4;
     gap:8px;
+}
+
+
+/*list of skills*/
+.language{
+    width: 107px;
+}
+
+.frameworks{
+    width: 140px;
+}
+
+.skills{
+    width: 106px;
 }
 
 .title {
@@ -128,13 +127,11 @@ p.introduction{
     justify-content: center;
     height: 16px;
     margin-right:0;
-    
     font-family: ''Roboto';';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
-       
     letter-spacing: 0.03em;
     color: #9490FF;  
 }
@@ -148,47 +145,37 @@ div.experience {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-   
     display: flex;
     align-items: flex-start;
     justify-content: center;
     align-content: flex-start;
     text-align: center;
     color: #F5F5FF;
-         
     }
 
-ul{
-        list-style:none;
+ul {
+   list-style:none;
     }
-
 
 
 .vector-line{
-
-width: 50%;
-height: 0px;
-right: 0px;
-
-left: 16.67%;
-right: 16.67%;
-top: 70.83%;
-bottom: 29.17%;
-
+    width: 50%;
+    height: 0px;
+    right: 0px;
+    left: 16.67%;
+    right: 16.67%;
+    top: 70.83%;
+    bottom: 29.17%;
 }
 
 ul{
-
     margin: 3;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 30px;
-
-   
     color: #F5F5FF;
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -204,7 +191,6 @@ ul{
     top: 0;
     background: #eeeef4;
     filter: blur(50px);
-
 }
 
 .shape-model2 {
@@ -218,6 +204,7 @@ ul{
 }
 
 /*social site link icons style*/
+
 .social{
     display: flex;
     align-items: center;
