@@ -1,7 +1,223 @@
 *{
-    width:100%;
-    padding:0;
-    background-image: url("./Overlay.svg");
+  width:100%; 
+  padding: 0;
+  background-image: url("./Overlay.svg");
+  color: aliceblue;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 75%;
+}
+
+/*toolbar styles header , logo , menubar*/
+.header {
+  width: 100%;
+  height: 78.42px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-left: 18px;
+  width: 81px;
+  height: 16px;
+  font-family: "" Roboto ";";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+nav {
+  width: 30px;
+  padding-right: 10px;
+  height: 16px;
+  margin-right: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myname {
+  width: 327px;
+  height: 55px;
+  font-family: "" Roboto "";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #7d73fc;
+  right: 0;
+  left: 0;
+  width: 327px;
+  height: 55px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+h2.position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 87px;
+  margin: 0px;
+  padding: 30px;
+  font-family: "" Roboto "";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #edecff;
+}
+
+p.introduction {
+  width: 327px;
+  height: 170px;
+  font-family: "" Roboto "";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #c8c8d4;
+  gap: 8px;
+}
+
+/*list of skills*/
+.language {
+  width: 107px;
+}
+
+.frameworks {
+  width: 140px;
+}
+
+.skills {
+  width: 106px;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 16px;
+  margin-right: 0;
+  font-family: "" Roboto ";";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #9490ff;
+}
+
+div.experience {
+  min-width: 75%;
+  height: auto;
+  padding: 30px;
+  font-family: "" Roboto ";";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+  color: #f5f5ff;
+}
+
+ul {
+  list-style: none;
+}
+
+.vector-line {
+  width: 50%;
+  height: 0px;
+  left: 16.67%;
+  right: 16.67%;
+  top: 70.83%;
+  bottom: 29.17%;
+}
+
+ul {
+  margin: 3;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #f5f5ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/*background shapes*/
+
+.shape-model1 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: -106px;
+  top: 0;
+  background: #eeeef4;
+  filter: blur(50px);
+}
+
+.shape-model2 {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  right: 25px;
+  top: 595px;
+  background: #eeeef4;
+  filter: blur(50px);
+}
+
+/*social site link icons style*/
+
+.social {
+  display: flex;
+  align-items: center;
+  padding: 4px 0px;
+  gap: 12px;
+  width: 77px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  border: 3px solid #ad308e;
+}
+
+a:hover {
+  border: 3px solid #275c8d;
+}
+
+a:active {
+  border: 3px solid #09f21d;
+}
+und-image: url("./Overlay.svg");
     color: aliceblue;
 }
 
@@ -72,8 +288,7 @@ main {
     letter-spacing: 0.37px;
     flex: none;
     order: 0;
-    flex-grow: 0; 
-    
+    flex-grow: 0;     
 }
 
 
@@ -91,7 +306,6 @@ h2.position{
     font-size: 32px;
     line-height: 44px;
     color: #EDECFF;
-   
 }
 
 p.introduction{
