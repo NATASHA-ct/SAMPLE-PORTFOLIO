@@ -14,11 +14,13 @@ body {
 
 /* toolbar styles header , logo , menubar */
 .header {
-  width: 100%;
-  height: 78.42px;
-  display: flex;
-  justify-content: space-between;
-  padding: 4px 0;
+     display:flex;
+     justify-content: space-between;
+     text-align: center;
+     align-items: flex-start;
+     width:90%;
+     margin-top:10px;
+     height: 7vh;
 }
 
 .logo {
@@ -37,6 +39,9 @@ body {
   color: #fff;
 }
 
+.dropdown{
+    font-size:40px; 
+}
 nav {
   width: 30px;
   padding-right: 10px;
@@ -51,7 +56,7 @@ nav {
 }
 
 .myname {
-  width: 70%;
+  width: 75%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -72,7 +77,8 @@ h2.position {
   justify-content: center;
   width: 100%;
   margin: 0;
-  padding: 30px;
+  padding-top:25px
+  padding-bottom: 30px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -123,7 +129,7 @@ p.introduction {
 }
 
 div.experience {
-  height: auto;
+  width: 70%;;
   padding: 30px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -131,6 +137,7 @@ div.experience {
   font-size: 15px;
   line-height: 24px;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   align-content: flex-start;
@@ -178,6 +185,7 @@ div.experience {
 /* social site link icons style */
 .social {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 4px 0;
   gap: 12px;
