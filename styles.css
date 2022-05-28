@@ -2,7 +2,6 @@
   width: 100%;
   padding: 0;
   color: aliceblue;
-  
 }
 
 body {
@@ -10,12 +9,10 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-   background-color: #eeeef4;; 
-  
-    
+  background-color: #eeeef4;
 }
 
-main{
+main {
   width: 375px;
   background-image: url("./background-shapes/eclispeA.svg");
   background-repeat: no-repeat;
@@ -28,11 +25,10 @@ main{
   justify-content: space-between;
   text-align: center;
   align-items: flex-start;
-  width:375px;
+  width: 375px;
   margin-top: 10px;
   height: 48px;
   background-color: #191765;
-
 }
 
 .logo {
@@ -135,7 +131,6 @@ p.introduction {
   height: 20vh;
   padding-bottom: 40px;
   text-align: left;
-  margin-top: 10%;
   margin-bottom: 10%;
   gap: 16px;
 }
@@ -161,8 +156,6 @@ p.introduction {
   margin: auto;
   padding-bottom: 40px;
   gap: 10px;
-  
-  
 }
 
 .vector-line {
@@ -190,7 +183,7 @@ p.introduction {
   height: 68px;
   right: 300px;
   top: 595px;
-  border-radius:50px;
+  border-radius: 50px;
   background: #eeeef4;
   filter: blur(50px);
 }
@@ -224,14 +217,13 @@ a:active {
 
 /* STYLES FOR PROJECTS SECTION */
 
-
 .all-work {
- display: grid;
- grid-template-columns: auto;
- justify-content: center;
- align-items: center; 
- padding-right: 15px;
- row-gap:40px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  row-gap: 40px;
 }
 
 .go-to {
@@ -239,43 +231,43 @@ a:active {
   text-align: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
   margin-top: 10px;
-
-  
 }
 
 .go-work {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-  color:#a2a3ae;
-  width:20px;
-  
+  color: #a2a3ae;
+  width: 20px;
 }
 
 .arrow-down {
   width: 18px;
   height: 21.3px;
   color: #c4c4c4;
-  padding-right:10px;
- 
+  padding-right: 10px;
 }
 
 .work-title {
-  width:327px;
+  width: 327px;
   font-family: "Roboto", sans-serif;
-  margin-bottom:10px ;
+  margin-bottom: 10px;
   font-style: medium;
   font-size: 40px;
   color: #9490ff;
-  margin-left:30px;
+  margin-left: 30px;
 }
 
-.project-image{
-  width:338px;
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 338px;
   height: 236px;
   background-color: white;
-  margin-left:30px;
+  margin-left: 30px;
 }
 
 h2.project-title {
@@ -285,10 +277,9 @@ h2.project-title {
   font-style: medium;
   font-weight: 500;
   font-size: 32px;
-  line-height:117%;
-  padding-left: 30PX;
+  line-height: 117%;
+  padding-left: 30px;
   color: #fff;
-
 }
 
 .project-infor {
@@ -309,7 +300,7 @@ h2.project-title {
   justify-content: left;
   width: 317px;
   gap: 8px;
-  margin-left:35px;
+  margin-left: 35px;
 }
 
 .project-list {
@@ -320,7 +311,6 @@ h2.project-title {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
-  
 }
 
 .used-tools > li:last-child {
@@ -334,75 +324,63 @@ h2.project-title {
   color: #ecebff;
   margin-left: 30px;
   border: none;
-  
 }
 
-button.see-prj:visited
-{
- background-color:#7e0e3eb2;
- 
-}
- 
-button.see-prj:hover
-{
- background-color:#275c8d;
+button.see-prj:visited {
+  background-color: #7e0e3eb2;
 }
 
-button.see-prj:active
-{
- border: 3px solid #09f21d;
+button.see-prj:hover {
+  background-color: #275c8d;
 }
 
-/*background shapes*/
+button.see-prj:active {
+  border: 3px solid #09f21d;
+}
 
+/* background shapes */
 
-.eclipse1{
+.eclipse1 {
   position: absolute;
   width: 39.6px;
   height: 482.57px;
-  border-radius:48%;
+  border-radius: 48%;
   background: #edecff;
   filter: blur(20px);
   transform: rotate(-36.8deg);
- 
 }
 
-.eclipse2{
-
+.eclipse2 {
   position: absolute;
   width: 70.28px;
   height: 261.6px;
   left: 730px;
   top: 2050.23px;
-  border-radius:50px;
-  background:#edecff;
+  border-radius: 50px;
+  background: #edecff;
   filter: blur(30px);
   transform: rotate(36.8deg);
- 
 }
 
-.eclipse3{
-  
+.eclipse3 {
   position: absolute;
   width: 308px;
   height: 155px;
-  right:593px;
+  right: 593px;
   top: 2784px;
-  border-radius:50px;
-  background:rgba(237, 236, 255, 0.3);
+  border-radius: 50px;
+  background: rgba(237, 236, 255, 0.3);
   filter: blur(30px);
-  
 }
 
-.eclipse4{
+.eclipse4 {
   position: absolute;
   width: 70.28px;
   height: 261.6px;
   left: 830px;
   top: 3380.23px;
-  border-radius:50px;
-  background:#edecff;
+  border-radius: 50px;
+  background: #edecff;
   filter: blur(30px);
   transform: rotate(-36.8deg);
-} 
-
+}
