@@ -356,7 +356,7 @@ button.see-prj:active {
   width: 70.28px;
   height: 261.6px;
   left: 730px;
-  top: 2050.23px;
+  top: 2150.23px;
   border-radius: 50px;
   background: #edecff;
   filter: blur(30px);
@@ -368,7 +368,7 @@ button.see-prj:active {
   width: 308px;
   height: 155px;
   right: 593px;
-  top: 2784px;
+  top: 2860px;
   border-radius: 50px;
   background: rgba(237, 236, 255, 0.3);
   filter: blur(30px);
@@ -378,10 +378,10 @@ button.see-prj:active {
   position: absolute;
   width: 70.28px;
   height: 261.6px;
-  left: 830px;
-  top: 3380.23px;
+  left: 770px;
+  top: 3500.23px;
   border-radius: 50px;
   background: #edecff;
   filter: blur(30px);
-  transform: rotate(-36.8deg);
+  transform: rotate(-66.8deg);
 }
