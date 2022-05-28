@@ -14,13 +14,15 @@ body {
 
 /* toolbar styles header , logo , menubar */
 .header {
-  width: 100%;
-  height: 78.42px;
-  display: flex;
-  justify-content: space-between;
-  padding: 4px 0;
-  }
 
+     display:flex;
+     justify-content: space-between;
+     text-align: center;
+     align-items: flex-start;
+     width:90%;
+     margin-top:10px;
+     height: 7vh;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -42,6 +44,9 @@ body {
    
 }
 
+.dropdown{
+    font-size:40px; 
+}
 nav {
   width: 30px;
   padding-right: 10px;
@@ -49,15 +54,17 @@ nav {
   margin-right: 0;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .myname {
-  width: 70%;
-  font-family: 'Roboto', sans-serif;
+
+  width: 80%;
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -66,9 +73,6 @@ main {
   left: 0;
   text-align: center;
   letter-spacing: 0.37px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 h2.position {
@@ -78,8 +82,8 @@ h2.position {
   text-align: center;
   width:75%;
   margin: 0;
-  padding: 30px;
-  font-family: 'Roboto', sans-serif;
+  padding-bottom:40px;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -102,17 +106,25 @@ p.introduction {
 
 /* list of skills */
 .language {
-  width: 107px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 25vh;
 }
 
 .frameworks {
-  width: 140px;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 20vh;
+  text-align: left;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
-  width: 3%;
+  width: 38%;
   height: 20vh;
   text-align: left;
   margin-bottom: 10%;
@@ -121,7 +133,6 @@ p.introduction {
 
 
 .title {
-  
   display: flex;
   height: 16px;
   margin-right: 0;
@@ -135,24 +146,15 @@ p.introduction {
 }
 
 div.experience {
-  min-width: 75%;
-  height: auto;
-  padding: 30px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-content: flex-start;
-  text-align: center;
-  color: #f5f5ff;
+    width:70%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .vector-line {
-  width: 50%;
+  width: 350px;
   height: 0;
 }
 
