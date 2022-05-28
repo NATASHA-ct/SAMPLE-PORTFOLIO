@@ -14,6 +14,7 @@ body {
 
 /* toolbar styles header , logo , menubar */
 .header {
+
      display:flex;
      justify-content: space-between;
      text-align: center;
@@ -22,21 +23,25 @@ body {
      margin-top:10px;
      height: 7vh;
 }
-
 .logo {
   display: flex;
   align-items: center;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   margin-left: 18px;
   width: 81px;
   height: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 100px;/**/
+  line-height: 30px;
   color: #fff;
+}
+.dropdown{
+    font-size:40px; 
+   
 }
 
 .dropdown{
@@ -56,6 +61,7 @@ nav {
 }
 
 .myname {
+
   width: 80%;
   margin-top: 60px;
   font-family: "Roboto", sans-serif;
@@ -88,7 +94,7 @@ h2.position {
 p.introduction {
   width: 327px;
   height: 170px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -122,13 +128,15 @@ p.introduction {
   height: 20vh;
   text-align: left;
   margin-bottom: 10%;
+
 }
+
 
 .title {
   display: flex;
   height: 16px;
   margin-right: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -153,12 +161,15 @@ div.experience {
 .list {
   list-style: none;
   margin: 3px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: #f5f5ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 /* background shapes */
@@ -195,6 +206,7 @@ div.experience {
 
 a {
   text-decoration: none;
+  width: 200px;
 }
 
 a:visited {
