@@ -10,16 +10,19 @@ body {
   flex-direction: column;
   align-items: center;
   min-width: 75%;
+  overflow-x: hidden;
 }
 
 /* toolbar styles header , logo , menubar */
 .header {
-  width: 100%;
-  height: 78.42px;
   display: flex;
   justify-content: space-between;
-  padding: 4px 0;
-  }
+  text-align: center;
+  align-items: flex-start;
+  width: 90%;
+  margin-top: 10px;
+  height: 7vh;
+}
 
 .logo {
   display: flex;
@@ -27,19 +30,17 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  margin-top: 10px;
   margin-left: 18px;
-  width: 81px;
+  width: 110px;
   height: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 100px;/**/
   line-height: 30px;
   color: #fff;
 }
-.dropdown{
-    font-size:40px; 
-   
+
+.dropdown {
+  font-size: 40px;
+  border: none;
 }
 
 nav {
@@ -49,15 +50,16 @@ nav {
   margin-right: 0;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .myname {
-  width: 70%;
-  font-family: 'Roboto', sans-serif;
+  width: 80%;
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -66,9 +68,6 @@ main {
   left: 0;
   text-align: center;
   letter-spacing: 0.37px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 h2.position {
@@ -76,10 +75,10 @@ h2.position {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width:75%;
+  width: 75%;
   margin: 0;
-  padding: 30px;
-  font-family: 'Roboto', sans-serif;
+  padding-bottom: 40px;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
@@ -102,57 +101,59 @@ p.introduction {
 
 /* list of skills */
 .language {
-  width: 107px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 20vh;
+  gap: 12px;
 }
 
 .frameworks {
-  width: 140px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 20vh;
+  text-align: left;
+  gap: 12px;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
-  width: 3%;
+  width: 38%;
   height: 20vh;
+  padding-bottom: 40px;
   text-align: left;
+  margin-top: 10%;
   margin-bottom: 10%;
-
+  gap: 16px;
 }
 
-
 .title {
-  
   display: flex;
   height: 16px;
-  margin-right: 0;
+  margin-left: 10px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #9490ff; 
+  color: #9490ff;
 }
 
-div.experience {
-  min-width: 75%;
-  height: auto;
-  padding: 30px;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+.experience {
+  width: 80%;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-content: flex-start;
-  text-align: center;
-  color: #f5f5ff;
+  flex-wrap: wrap;
+  height: auto;
+  margin: auto;
+  padding-bottom: 40px;
+  gap: 10px;
 }
 
 .vector-line {
-  width: 50%;
+  width: 350px;
   height: 0;
 }
 
@@ -165,9 +166,8 @@ div.experience {
   font-size: 15px;
   line-height: 30px;
   color: #f5f5ff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  gap: 8px;
+  padding: 5px 8px 5px 8px;
 }
 
 /* background shapes */
@@ -196,15 +196,14 @@ div.experience {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 0;
-  gap: 12px;
-  width: 77px;
+  margin: auto;
+  gap: 24px;
+  width: 120px;
   height: 40px;
 }
 
 a {
   text-decoration: none;
-  width: 200px;
 }
 
 a:visited {
