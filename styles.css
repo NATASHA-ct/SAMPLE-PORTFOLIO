@@ -1,7 +1,6 @@
 * {
   width: 100%;
   padding: 0;
-  background-image: url("./Overlay.svg");
   color: aliceblue;
 }
 
@@ -9,8 +8,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 75%;
   overflow-x: hidden;
+  background-color: #eeeef4;
+}
+
+main {
+  width: 375px;
+  background-image: url("./background-shapes/eclispeA.svg");
+  background-repeat: no-repeat;
+  background-color: #191765;
 }
 
 /* toolbar styles header , logo , menubar */
@@ -19,9 +25,10 @@ body {
   justify-content: space-between;
   text-align: center;
   align-items: flex-start;
-  width: 90%;
+  width: 375px;
   margin-top: 10px;
-  height: 7vh;
+  height: 48px;
+  background-color: #191765;
 }
 
 .logo {
@@ -30,7 +37,7 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 18px;
   width: 110px;
   height: 16px;
@@ -38,7 +45,7 @@ body {
   color: #fff;
 }
 
-.dropdown {
+.menu {
   font-size: 40px;
   border: none;
 }
@@ -124,7 +131,7 @@ p.introduction {
   height: 20vh;
   padding-bottom: 40px;
   text-align: left;
-  margin-top: 10%;
+  margin-top: 30%;
   margin-bottom: 10%;
   gap: 16px;
 }
@@ -171,22 +178,13 @@ p.introduction {
 }
 
 /* background shapes */
-.shape-model1 {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  left: -106px;
-  top: 0;
-  background: #eeeef4;
-  filter: blur(50px);
-}
-
 .shape-model2 {
   position: absolute;
   width: 68px;
   height: 68px;
-  right: 25px;
+  right: 300px;
   top: 595px;
+  border-radius: 50px;
   background: #eeeef4;
   filter: blur(50px);
 }
@@ -216,4 +214,176 @@ a:hover {
 
 a:active {
   border: 3px solid #09f21d;
+}
+
+/* STYLES FOR PROJECTS SECTION */
+
+.all-work {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  row-gap: 40px;
+}
+
+.go-to {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.go-work {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #a2a3ae;
+  width: 20px;
+}
+
+.arrow-down {
+  width: 18px;
+  height: 21.3px;
+  color: #c4c4c4;
+  padding-right: 10px;
+}
+
+.work-title {
+  width: 327px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+  font-style: medium;
+  font-size: 40px;
+  color: #9490ff;
+  margin-left: 30px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 338px;
+  height: 236px;
+  background-color: white;
+  margin-bottom: 24px;
+  margin-left: 30px;
+}
+
+h2.project-title {
+  text-align: left;
+  width: 375px;
+  font-family: "Roboto", sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 117%;
+  padding-left: 30px;
+  color: #fff;
+}
+
+.project-infor {
+  width: 327px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  color: #c8c8d4;
+  padding-left: 30px;
+  gap: 8px;
+}
+
+.used-tools {
+  display: flex;
+  justify-content: left;
+  width: 317px;
+  gap: 8px;
+  margin-left: 35px;
+}
+
+.project-list {
+  border-right: 2px solid #808080;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: regular;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 12px 10px 12px;
+}
+
+.used-tools > li:last-child {
+  border: none;
+}
+
+.see-prj {
+  width: 89px;
+  height: 48px;
+  background-color: #7d73fc;
+  color: #ecebff;
+  margin-left: 30px;
+  border: none;
+}
+
+button.see-prj:visited {
+  background-color: #a8285fb2;
+}
+
+button.see-prj:hover {
+  background-color: #275c8d;
+}
+
+button.see-prj:active {
+  border: 3px solid #09f21d;
+}
+
+/* background shapes */
+
+.eclipse1 {
+  position: absolute;
+  width: 39.6px;
+  height: 482.57px;
+  border-radius: 48%;
+  background: #edecff;
+  filter: blur(20px);
+  transform: rotate(-36.8deg);
+}
+
+.eclipse2 {
+  position: absolute;
+  width: 70.28px;
+  height: 261.6px;
+  left: 730px;
+  top: 2150.23px;
+  border-radius: 50px;
+  background: #edecff;
+  filter: blur(30px);
+  transform: rotate(36.8deg);
+}
+
+.eclipse3 {
+  position: absolute;
+  width: 308px;
+  height: 155px;
+  right: 593px;
+  top: 2860px;
+  border-radius: 50px;
+  background: rgba(237, 236, 255, 0.3);
+  filter: blur(30px);
+}
+
+.eclipse4 {
+  position: absolute;
+  width: 70.28px;
+  height: 261.6px;
+  left: 770px;
+  top: 3500.23px;
+  border-radius: 50px;
+  background: #edecff;
+  filter: blur(30px);
+  transform: rotate(-66.8deg);
 }
