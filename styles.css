@@ -268,6 +268,7 @@ a:active {
   width: 338px;
   height: 236px;
   background-color: white;
+  margin-bottom: 24px;
   margin-left: 30px;
 }
 
@@ -312,8 +313,7 @@ h2.project-title {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
-  padding: 10px 12px 10px 12px;
-}
+  padding: 10px 12px 10px 12px;}
 
 .used-tools > li:last-child {
   border: none;
