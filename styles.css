@@ -312,6 +312,7 @@ h2.project-title {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
+  padding: 10px 12px 10px 12px;
 }
 
 .used-tools > li:last-child {
