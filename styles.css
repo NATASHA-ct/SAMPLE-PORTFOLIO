@@ -267,7 +267,7 @@ a:active {
 .project-image {
   width: 338px;
   height: 236px;
-  background-color: white;
+  background-color: white; 
   margin-bottom: 24px;
   margin-left: 30px;
 }
@@ -313,7 +313,8 @@ h2.project-title {
   font-weight: 500;
   font-size: 15px;
   color: #fff;
-  padding: 10px 12px 10px 12px;}
+  padding: 10px 12px 10px 12px;
+}
 
 .used-tools > li:last-child {
   border: none;
@@ -329,7 +330,7 @@ h2.project-title {
 }
 
 button.see-prj:visited {
-  background-color: #7e0e3eb2;
+  background-color: #a8285fb2;
 }
 
 button.see-prj:hover {
