@@ -10,6 +10,7 @@ body {
   align-items: center;
   overflow-x: hidden;
   background-color: #eeeef4;
+  height:100vh;
 }
 
 main {
@@ -370,10 +371,10 @@ button.see-prj:active {
   width: 308px;
   height: 155px;
   right: 593px;
-  top: 2860px;
+  top: 2990px;
   border-radius: 50px;
   background: rgba(237, 236, 255, 0.3);
-  filter: blur(30px);
+  filter: blur(20px);
 }
 
 .eclipse4 {
@@ -387,3 +388,50 @@ button.see-prj:active {
   filter: blur(30px);
   transform: rotate(-66.8deg);
 }
+
+/*footer*/
+.footer{
+  width: 375px;
+  background-color: #191765;
+}
+
+.contact-us{
+  width: 327px;
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 32px;
+  color:#9390FF;
+  right: 0;
+  left: 0;
+  text-align: center;
+  letter-spacing: 0.37px;
+}
+.offer-help{
+  width: 327px;
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: regular;
+  font-weight: 500;
+  font-size: 16px;
+  color:#F5F5FF;
+  right: 0;
+  left: 0;
+  text-align: center;
+  letter-spacing: 0.37px;
+}
+.my-email{
+  width: 221px;
+  margin-top: 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: regular;
+  font-weight: 500;
+  font-size: 20px;
+  color:#F5F5FF;
+  right: 0;
+  left: 0;
+  text-align: center;
+  letter-spacing: 0.37px;
+}
+
