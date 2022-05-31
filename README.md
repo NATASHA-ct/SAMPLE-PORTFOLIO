@@ -39,6 +39,12 @@
 - Twitter: [@NatashaChirombe]
 - LinkedIn: [Natasha Chirombe](linkedin.com/in/natasha-chirombe-1531aa17b)
 
+👤 **Author 2**
+
+- GitHub: [@nimplay]((https://github.com/nimplay)
+- Twitter: [@NimrodAcosta]
+- LinkedIn: [Natasha Chirombe](https://www.linkedin.com/in/nimrod-acosta-734330169/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
