@@ -202,6 +202,13 @@ p.introduction {
   gap: 24px;
   width: 120px;
   height: 40px;
+  list-style: none;
+
+}
+
+i.fa {
+  height: 20px;
+  width: 17.99px;
 }
 
 a {
@@ -333,18 +340,22 @@ h2.project-title {
   border: none;
 }
 
-button.see-prj:visited {
-  background-color: #a8285fb2;
+button.see-prj:enabled {
+  background-color: #7D73FC;
 }
 
 button.see-prj:hover {
-  background-color: #275c8d;
+  background-color: #7D73FC;
+  box-shadow: 0px 8px 16px rgba(125, 115, 252, 0.48);
 }
 
 button.see-prj:active {
-  border: 3px solid #09f21d;
+  background-color:  #5E42D7;
 }
 
+button.see-prj:disabled {
+  background-color:#2A2B33;;
+}
 /* background shapes */
 
 .eclipse1 {
@@ -467,6 +478,7 @@ button.see-prj:active {
   font-size: 15px;
   line-height: 24px;
   color: #81818c;
+  padding: 15px 16px 15px 16px;
 }
 
 .email::placeholder {
@@ -475,7 +487,11 @@ button.see-prj:active {
 }
 
 #message {
+  color:#81818C;
   height: 148px;
+}
+.message::placeholder{
+  padding: 12px;
 }
 
 #see-project {
