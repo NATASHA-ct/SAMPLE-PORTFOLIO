@@ -13,7 +13,7 @@ body {
   align-items: center;
   overflow-x: hidden;
   background-color: #eeeef4;
-  height:100vh;
+  height: 100vh;
 }
 
 main {
@@ -392,28 +392,27 @@ button.see-prj:active {
   transform: rotate(-66.8deg);
 }
 
-/*footer*/
-.footer{
+/* footer */
+.footer {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   background-color: #191765;
+  width: 375px;
 }
 
-/*no use position-absolute*/
+/* no use position-absolute */
 
-.contact-us-format{
+.contact-us-format {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: none;
-  order: 0;
   flex-grow: 0;
-  position: absolute;
-  height: 6000px;
 }
+
 /* Title fortmat */
-.contact-us{
+.contact-us {
   margin-top: 120px;
   height: 35px;
   font-family: "Roboto", serif;
@@ -423,54 +422,89 @@ button.see-prj:active {
   line-height: 44px;
   align-items: center;
   text-align: center;
-  color: #9390FF;
+  color: #9390ff;
   flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-/*this is the paragraph*/
-.offer-help{
-  width: 327px;  
+
+/* this is the paragraph */
+.offer-help {
+  width: 327px;
   font-family: "Inter", serif;
   font-style: normal;
   margin-bottom: 40px;
   font-weight: 500;
   font-size: 16px;
-  color:#F5F5FF;
-  right: 0;
-  left: 0;
-  text-align: center;
-  letter-spacing: 0.37px;
-}
-/*this is form frame */
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 24px;
-  width: 327px;
-  height: 292px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-/* settin order for blocks*/
-.social {
-  order: 2;
-}
-/* email formating */
-.my-email{
-  order: 3;
-  width: 221px; 
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  color:#F5F5FF;
+  color: #f5f5ff;
   right: 0;
   left: 0;
   text-align: center;
   letter-spacing: 0.37px;
 }
 
+/* this is form frame */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 327px;
+  flex: none;
+  flex-grow: 0;
+}
+
+#name {
+  width: 327px;
+  height: 48px;
+}
+
+#email {
+  color: #9490ff;
+  height: 48px;
+}
+
+::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818c;
+}
+
+.email::placeholder {
+  color: #191765;
+  line-height: 132%;
+}
+
+#message {
+  height: 148px;
+}
+
+#see-project {
+  margin: 40px 143px 97px 143px;
+}
+
+.below-form {
+  color: #3a3837;
+  height: 1px;
+  width: 375px;
+}
+
+/* email formating */
+.my-email {
+  width: 221px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #f5f5ff;
+  right: 0;
+  left: 0;
+  text-align: center;
+  letter-spacing: 0.37px;
+}
+
+.below-email {
+  background-image: url("./images/Shape.png");
+  border: none;
+  width: 134px;
+  height: 5px;
+}
