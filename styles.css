@@ -465,13 +465,24 @@ button.see-prj:disabled {
 }
 
 #name {
+  font-size: 15px;
+  line-height: 24px;
   width: 327px;
   height: 48px;
+  color: #81818c;
+  padding: 0;
+  background-color: #fff;
 }
 
 #email {
-  color: #9490ff;
+  background-color: #f7f3ff;
+  border: 1px solid #9490ff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #191765;
   height: 48px;
+  padding: 0;
 }
 
 ::placeholder {
@@ -487,12 +498,18 @@ button.see-prj:disabled {
 }
 
 #message {
+  background-color: #fff;
   color: #81818c;
-  height: 148px;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  width: 303px;
+  height: 124px;
 }
 
 .message::placeholder {
-  padding: 12px;
+  padding: 0;
 }
 
 #see-project {
@@ -510,13 +527,14 @@ button.see-prj:disabled {
   width: 221px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
-  color: #f5f5ff;
-  right: 0;
-  left: 0;
+  color: #ebebff;
+  left: 76px;
   text-align: center;
   letter-spacing: 0.37px;
+  margin-bottom: 27px;
+  margin-top: 9px;
 }
 
 .below-email {
