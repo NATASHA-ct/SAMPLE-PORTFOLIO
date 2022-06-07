@@ -4,13 +4,6 @@
 html {
   box-sizing: border-box;
   background-color: #191765;
-
-  /*
-
-  background-image: url(./background-shapes/mobile-version/header-area-background.png), url(./background-shapes/mobile-version/projects-area-background.png);
-
-  background-position:top,center;
-  background-repeat: no-repeat, no-repeat; */
 }
 
 *,
@@ -20,7 +13,6 @@ html {
   margin: 0;
   padding: 0;
 }
-
 
 /* header styles */
 .header {
@@ -99,7 +91,6 @@ html {
 }
 
 /* ---skills--- */
-
 .my-skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -158,8 +149,6 @@ html {
   list-style: none;
   order: 1;
 }
-
-
 
 /* ---ICONS AREA--- */
 .supporting-items {
@@ -457,93 +446,3 @@ button.see-prj:disabled {
   text-align: center;
   letter-spacing: 0.37px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -----FOOTER AREA STYLES------ */
