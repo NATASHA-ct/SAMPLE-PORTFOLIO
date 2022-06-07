@@ -1,105 +1,85 @@
 /* this is the fonts declartion */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap');
 
-* {
-  width: 100%;
-  padding: 0;
-  color: aliceblue;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden;
-  background-color: #eeeef4;
-  height: 100vh;
-}
-
-main {
-  width: 375px;
-  background-image: url("./background-shapes/eclispeA.svg");
-  background-repeat: no-repeat;
+html {
+  box-sizing: border-box;
   background-color: #191765;
 }
 
-/* toolbar styles header , logo , menubar */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* header styles */
 .header {
+  background-image: url(./background-shapes/mobile-version/header-area-background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: absolute;
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  align-items: flex-start;
-  width: 375px;
-  margin-top: 10px;
-  height: 48px;
-  background-color: #191765;
+  margin-top: 2.5rem;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  margin-top: 20px;
-  margin-left: 18px;
-  width: 110px;
-  height: 16px;
-  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
   color: #fff;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 24px;
 }
 
 .menu {
-  font-size: 40px;
-  border: none;
+  margin-top: 13.58px;
+  margin-bottom: 13.58px;
+  margin-right: 32px;
 }
 
-nav {
-  width: 30px;
-  padding-right: 10px;
-  height: 16px;
-  margin-right: 0;
-}
-
-.main {
+.introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
+  margin: 47px 24px 33px 24px;
 }
 
-.myname {
-  width: 80%;
-  margin-top: 60px;
-  font-family: "Roboto", sans-serif;
+.my-name {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
-  color: #7d73fc;
-  right: 0;
-  left: 0;
+  font-size: 48px;
+  line-height: 72px;
   text-align: center;
   letter-spacing: 0.37px;
+  color: #7d73fc;
+  margin-bottom: 12px;
+  order: 0;
 }
 
-h2.position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 75%;
-  margin: 0;
-  padding-bottom: 40px;
-  font-family: "Roboto", sans-serif;
+.my-job-title {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
+  text-align: center;
   color: #edecff;
+  margin-bottom: 40px;
+  order: 1;
 }
 
-p.introduction {
-  width: 327px;
-  height: 170px;
+.my-ability {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -107,123 +87,369 @@ p.introduction {
   line-height: 28px;
   text-align: center;
   color: #c8c8d4;
-  gap: 8px;
+  order: 2;
 }
 
-/* list of skills */
-.language {
+/* ---skills--- */
+.my-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: flex-start;
+  grid-gap: 24px;
+  margin: 32px 24px 33px 24px;
+}
+
+.languages.frameworks.skills {
   display: flex;
   flex-direction: column;
-  width: 35%;
-  height: 20vh;
+  align-items: flex-start;
+}
+
+.languages {
   gap: 12px;
+  order: 0;
 }
 
 .frameworks {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  height: 20vh;
-  text-align: left;
   gap: 12px;
+  order: 1;
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
-  width: 38%;
-  height: 20vh;
-  padding-bottom: 40px;
-  text-align: left;
-  margin-top: 30%;
-  margin-bottom: 10%;
   gap: 16px;
+  order: 2;
 }
 
-.title {
-  display: flex;
-  height: 16px;
-  margin-left: 10px;
+.skill-title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
+  align-items: center;
   letter-spacing: 0.03em;
   color: #9490ff;
+  margin: 5.33px 8px 17.33px 8px;
+  order: 0;
 }
 
-.experience {
-  width: 80%;
+.skill-list {
   display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  margin: auto;
-  padding-bottom: 40px;
-  gap: 10px;
-}
-
-.vector-line {
-  width: 350px;
-  height: 0;
-}
-
-.list {
-  list-style: none;
-  margin: 3px;
+  flex-direction: column;
+  align-items: flex-start;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 24px;
   color: #f5f5ff;
-  gap: 8px;
-  padding: 5px 8px 5px 8px;
+  padding: 0 7.16667px;
+  gap: 4.78px;
+  list-style: none;
+  order: 1;
 }
 
-/* background shapes */
-.shape-model2 {
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  right: 300px;
-  top: 595px;
-  border-radius: 50px;
-  background: #eeeef4;
-  filter: blur(50px);
+/* ---ICONS AREA--- */
+.supporting-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 48px 87.5px 79.85px 87.5px;
 }
 
-/* social site link icons style */
 .social {
   display: flex;
+  align-items: center;
+  order: 0;
+  list-style: none;
+  padding: 12px 10px;
+  gap: 23px;
+}
+
+.fa {
+  color: #fff;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.short {
+  display: flex;
+  justify-content: center;
+}
+
+.go-to1 {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+  color: #a2a3ae;
+  gap: 12px;
+}
+
+.go-work {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* ---PROJECTS SECTION-- */
+.main {
+  background-image: url(./background-shapes/mobile-version/projects-area-background.png);
+  background-repeat: no-repeat;
+  background-size: 100%, 555px;
+  background-position: cover;
+}
+
+.work-section {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  align-content: center;
+  margin: 0 24px 120px 24px;
+}
+
+.titles {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  color: #938fff;
+  margin: 0 24px 33px 24px;
+}
+
+.work-heading {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.all-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 48px 24px 0 24px;
+  grid-gap: 40px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   gap: 24px;
-  width: 120px;
-  height: 40px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+}
+
+.project-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #fff;
+  order: 0;
+}
+
+.project-infor {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+  order: 1;
+}
+
+.used-tools {
+  display: flex;
+  justify-content: left;
   list-style: none;
+  order: 2;
+  gap: 8px;
 }
 
-i.fa {
-  height: 20px;
-  width: 17.99px;
+.used-tools > li:last-child {
+  border: none;
 }
 
-a {
-  text-decoration: none;
+.project-list {
+  border-right: 2px solid #808080;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: regular;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 12px 10px 12px;
 }
 
-a:visited {
-  border: 3px solid #ad308e;
+.see-prj {
+  background-color: #7d73fc;
+  color: #ecebff;
+  width: 89px;
+  height: 48px;
+  border: none;
+  order: 3;
 }
 
-a:hover {
-  border: 3px solid #275c8d;
+button.see-prj:enabled {
+  background-color: #7d73fc;
 }
 
-a:active {
-  border: 3px solid #09f21d;
+button.see-prj:hover {
+  background-color: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+button.see-prj:active {
+  background-color: #5e42d7;
+}
+
+button.see-prj:disabled {
+  background-color: #2a2b33;
+}
+
+/* ---FOOTER AND FORM AREA--- */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 8px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 71px;
+  grid-gap: 40px;
+}
+
+.contact-instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  order: 0;
+}
+
+.contact-us {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #938fff;
+  order: 0;
+}
+
+.we-help {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+  order: 1;
+}
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  order: 1;
+}
+
+.name1 {
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  height: 48px;
+  color: #81818c;
+  background-color: #fff;
+  order: 0;
+}
+
+.email1 {
+  background-color: #f7f3ff;
+  border: 1px solid #9490ff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #191765;
+  width: 100%;
+  height: 48px;
+  order: 1;
+}
+
+.email1::placeholder {
+  color: #191765;
+  line-height: 132%;
+}
+
+#textarea1 {
+  background-color: #fff;
+  color: #81818c;
+  width: 100%;
+  padding: 0.2em;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  height: 124px;
+  order: 2;
+}
+
+::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818c;
+  padding: 15px 16px 15px 16px;
+}
+
+#see-project {
+  order: 3;
+}
+
+/* --end of form-- */
+
+.bottom-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 15px;
+  margin-bottom: 27px;
+  justify-items: center;
+}
+
+.my-email {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ebebff;
+  left: 76px;
+  text-align: center;
+  letter-spacing: 0.37px;
 }
 
 /* STYLES FOR PROJECTS SECTION */
