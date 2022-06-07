@@ -334,8 +334,8 @@ button.see-prj:disabled {
 }
 
 .contact-section {
-  display: grid;
-  grid-template-columns: 1fr;
+  display:flex;
+  flex-direction:column;
   margin-bottom: 71px;
   grid-gap: 40px;
 }
@@ -372,15 +372,19 @@ button.see-prj:disabled {
 
 /* form */
 .form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 24px;
+  display:flex;
+  flex-direction: column;
+  justify-items:center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
   order: 1;
 }
 
 .name1 {
   font-size: 15px;
   line-height: 24px;
+  width:100%;
   height: 48px;
   color: #81818c;
   background-color: #fff;
@@ -394,6 +398,7 @@ button.see-prj:disabled {
   font-size: 15px;
   line-height: 24px;
   color: #191765;
+  width: 100%;
   height: 48px;
   order: 1;
 }
@@ -406,6 +411,7 @@ button.see-prj:disabled {
 #textarea1 {
   background-color: #fff;
   color: #81818c;
+  width:100%;
   padding: 0.2em;
   font-weight: 400;
   font-size: 15px;
@@ -424,7 +430,6 @@ button.see-prj:disabled {
 #see-project {
   order: 3;
 }
-
 
 /* --end of form-- */
 
@@ -446,3 +451,4 @@ button.see-prj:disabled {
   text-align: center;
   letter-spacing: 0.37px;
 }
+
