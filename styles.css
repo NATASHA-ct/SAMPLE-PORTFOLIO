@@ -95,6 +95,21 @@ body {
   color: #edecff;
   margin-bottom: 40px;
   order: 1;
+  border-right: 3px solid purple;
+  animation: typing 6s steps(19);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 16ch;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 19ch;
+  }
 }
 
 .my-ability {
@@ -192,6 +207,26 @@ body {
   color: #fff;
   min-width: 20px;
   min-height: 20px;
+}
+
+.social li a {
+  box-shadow: 0 0 20px 10px #3c9ec1;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: shadow 3s linear infinite;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0 #bb12bb;
+    opacity: 0.06;
+    transform: translateX(-50px) scale(1);
+  }
+
+  50% {
+    box-shadow: 0 20px 50px rgb(221, 183, 55);
+    opacity: 1;
+  }
 }
 
 .short1 {
