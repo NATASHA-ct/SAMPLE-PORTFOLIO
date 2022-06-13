@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link] (https://natasha-ct.github.io/MY-PORTFOLIO/)
 
 
 ### Prerequisites
@@ -43,7 +43,7 @@
 
 - GitHub: [@nimplay]((https://github.com/nimplay)
 - Twitter: [@NimrodAcosta]
-- LinkedIn: [Natasha Chirombe](https://www.linkedin.com/in/nimrod-acosta-734330169/)
+- LinkedIn: [Nimrod Acosta](https://www.linkedin.com/in/nimrod-acosta-734330169/)
 
 ## 🤝 Contributing
 
