@@ -11,8 +11,9 @@
 
 - HTML
 - CSS
+- JavaScript
 
-## Live Demo (if available)
+## Live Demo (available)
 
 [Live Demo Link] (https://natasha-ct.github.io/MY-PORTFOLIO/)
 
@@ -28,7 +29,8 @@
 
 ### Install
 -Set up Github Actions
--Set up linter > Lighthouse , Webhint ,Stylelint
+-Set up linter > Lighthouse , Webhint ,Stylelint ,
+-Added Eslint
 
 
 ## Authors
@@ -44,6 +46,12 @@
 - GitHub: [@nimplay]((https://github.com/nimplay)
 - Twitter: [@NimrodAcosta]
 - LinkedIn: [Nimrod Acosta](https://www.linkedin.com/in/nimrod-acosta-734330169/)
+
+👤 **Author 3**
+
+- GitHub: [@divyanshthinks]((https://github.com/divyanshthinks)
+- Twitter: [@https://twitter.com/Devilstheory1]
+- LinkedIn: [Divyansh Singh](https://www.linkedin.com/in/divyansh-singh-a78709157/)
 
 ## 🤝 Contributing
 

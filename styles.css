@@ -5,6 +5,7 @@ html {
   width: 100%;
   box-sizing: border-box;
   background-color: #191765;
+  color: #f5f5f5;
 }
 
 body {
@@ -49,12 +50,73 @@ body {
 }
 
 .menu {
+  cursor: pointer;
+  width: 35px;
+  height: 23px;
   margin-top: 13.58px;
   margin-bottom: 13.58px;
   margin-right: 32px;
 }
 
+.block {
+  display: block;
+  background-color: #fff;
+  width: 30px;
+  height: 2px;
+  margin: 6.5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .nav-list {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  background-color: #191765;
+  background-image: url(./background-shapes/mobile-version/hamburgerbackground.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: translateX(100%);
+  list-style: none;
+  transition: 0.7s;
+  padding-top: 1em;
+  padding-left: 2em;
+  gap: 2em;
+}
+
+.menu-arrow {
+  position: absolute;
+  right: 10%;
+}
+
+.close-icon {
+  display: flex;
+  text-align: left;
+  justify-content: end;
+  margin-right: 10%;
+}
+
+.close {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-list.active {
+  transform: translateX(0%);
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.mail-link {
   display: none;
 }
 
@@ -576,11 +638,16 @@ button.see-prj:disabled {
   }
 
   .nav-list {
+    position: relative;
     display: flex;
-    justify-content: flex-end;
+    transform: translateX(10px);
+    flex-direction: row;
+    background-image: none;
+    justify-content: space-around;
+    align-content: flex-start;
     align-items: center;
-    align-self: center;
     list-style: none;
+    transition: 0;
     gap: 1.5em;
   }
 
@@ -592,6 +659,18 @@ button.see-prj:disabled {
     font-size: 15px;
     line-height: 20px;
     color: #fff;
+  }
+
+  .mail-link {
+    display: block;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  .menu-arrow {
+    display: none !important;
   }
 
   /* --introduction section-- */
