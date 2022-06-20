@@ -45,6 +45,12 @@
 - Twitter: [@NimrodAcosta]
 - LinkedIn: [Nimrod Acosta](https://www.linkedin.com/in/nimrod-acosta-734330169/)
 
+👤 **Author 3**
+
+- GitHub: [@divyanshthinks]((https://github.com/divyanshthinks)
+- Twitter: [@https://twitter.com/Devilstheory1]
+- LinkedIn: [Divyansh Singh](https://www.linkedin.com/in/divyansh-singh-a78709157/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
