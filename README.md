@@ -11,6 +11,7 @@
 
 - HTML
 - CSS
+- JavaScript
 
 ## Live Demo (if available)
 
@@ -28,7 +29,8 @@
 
 ### Install
 -Set up Github Actions
--Set up linter > Lighthouse , Webhint ,Stylelint
+-Set up linter > Lighthouse , Webhint ,Stylelint ,
+-Added Eslint
 
 
 ## Authors
