@@ -8,18 +8,39 @@
   <title>PORTFOLIO WEBSITE</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+  <script src="./javascript/myportfolio.js"  defer></script>
 
 <body>
+
   <header class="header">
+
     <nav class="nav">
       <div class="logo">T-Developer</div>
 
-      <img class="menu" src="./images/mobile/menu-icon.png" alt="menu-icon">
+      <div class="menu">
+        <span class="block"></span>
+        <span class="block"></span>
+        <span class="block"></span>
+      </div>
 
       <ul class="nav-list">
-        <li><a href="#"> Portfolio</a></li>
-        <li><a href="#"> About</a></li>
-        <li><a href="#"> Contact</a></li>
+
+        <div class="close-icon">
+          <a href="#" class="material-symbols-outlined close">
+            close
+          </a>
+        </div>
+
+        <li><a class="nav-link" href="#portfolio"> Portfolio</a><span class="material-symbols-outlined menu-arrow">chevron_right</span></li>
+        
+        <li><a class="nav-link" href="#about"> About</a><span class="material-symbols-outlined menu-arrow">chevron_right</span></li>
+        
+        <li><a class="nav-link" href="#contact"> Contact</a><span class="material-symbols-outlined menu-arrow">chevron_right</span></li>       
+        
+
         <li><a class="mail-link" href="#"><img class="mail" src="./images/desktop/mail-button.png" alt="clickable mail button"></a></li>
       </ul>
 
@@ -27,7 +48,7 @@
     </nav>
 
     <!--About me-->
-    <section class="top-section">
+    <section class="top-section" id="about">
 
       <section class="introduction">
         <h1 class="my-name">Natasha Chirombe</h1>
@@ -126,7 +147,7 @@
   </header>
 
 
-  <main class="main">
+  <main class="main" id="portfolio">
     <div class="title">
       <h2 class="work-heading1">MY RECENT <br> WORK</h2>
       <h2 class="work-heading2">My recent work</h2>
@@ -252,7 +273,7 @@
 
   <footer class="footer">
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
 
       <div class="contact-instructions">
         <h2 class="contact-us">CONTACT US</h2>
