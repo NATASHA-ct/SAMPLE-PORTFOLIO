@@ -13,7 +13,7 @@
 - CSS
 - JavaScript
 
-## Live Demo (if available)
+## Live Demo (available)
 
 [Live Demo Link] (https://natasha-ct.github.io/MY-PORTFOLIO/)
 
