@@ -44,7 +44,6 @@
         <li><a class="mail-link" href="#"><img class="mail" src="./images/desktop/mail-button.png" alt="clickable mail button"></a></li>
       </ul>
 
-
     </nav>
 
     <!--About me-->
@@ -147,6 +146,7 @@
   </header>
 
 
+
   <main class="main" id="portfolio">
     <div class="title">
       <h2 class="work-heading1">MY RECENT <br> WORK</h2>
@@ -165,112 +165,20 @@
     </div>
     <!--My Work-->
     <div class="work-section">
-
-
       <div class="all-projects">
-        <!--first project-->
 
-        <article id="project1" class="project-container">
-
-          <img class="project-image" src="./images/mobile/Img Placeholder.png" alt="project placeholder image">
-
-              
-          <div class="description">
-
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p class="project-infor"> A daily selection of privately personalized reads no accounts or sign-ups
-              required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took
-              standard dummy text.
-            </p>
-
-            <ul class="used-tools">
-              <li class="project-list">Css</li>
-              <li class="project-list">Html</li>
-              <li class="project-list">Bootstrap</li>
-              <li class="project-list">Ruby</li>
-            </ul>
-            <button type="button" class="see-prj">See Project</button>
-          </div>
-        </article>
-
-        <!--second project-->
-        <article id="project2" class="project-container">
-
-          <img class="project-image" src="./images/mobile/Img Placeholder.png" alt="project placeholder image">
-
-          <div class="description">
-
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p class="project-infor"> A daily selection of privately personalized reads no accounts or sign-ups
-              required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took
-              standard dummy text.
-            </p>
-
-            <ul class="used-tools">
-              <li class="project-list">Css</li>
-              <li class="project-list">Html</li>
-              <li class="project-list">Bootstrap</li>
-              <li class="project-list">Ruby</li>
-            </ul>
-            <button type="button" class="see-prj">See Project</button>
-          </div>
-        </article>
-
-        <!--third project-->
-
-        <article id="project3" class="project-container">
-
-          <img class="project-image" src="./images/mobile/Img Placeholder.png" alt="project placeholder image">
-
-
-          <div class="description">
-
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p class="project-infor"> A daily selection of privately personalized reads no accounts or sign-ups
-              required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took
-              standard dummy text.
-            </p>
-
-            <ul class="used-tools">
-              <li class="project-list">Css</li>
-              <li class="project-list">Html</li>
-              <li class="project-list">Bootstrap</li>
-              <li class="project-list">Ruby</li>
-            </ul>
-            <button type="button" class="see-prj">See Project</button>
-          </div>
-        </article>
-
-        <!--fourth project-->
-
-        <article id="project4" class="project-container">
-
-          <img class="project-image" src="./images/mobile/Img Placeholder.png" alt="project placeholder image">
-
-
-          <div class="description">
-
-            <h3 class="project-title">Multi-Post Stories</h3>
-            <p class="project-infor"> A daily selection of privately personalized reads no accounts or sign-ups
-              required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took
-              standard dummy text.
-            </p>
-
-            <ul class="used-tools">
-              <li class="project-list">Css</li>
-              <li class="project-list">Html</li>
-              <li class="project-list">Bootstrap</li>
-              <li class="project-list">Ruby</li>
-            </ul>
-            <button type="button" class="see-prj">See Project</button>
-          </div>
-        </article>
+      </div>     
     </div>
-
   </main>
 
-
-
+  <!--MODAL POPUP HTML-->
+   
+         <div class="modalpopup">
+          
+         </div> 
+    
+    
+  <!-- FOOTER -->
   <footer class="footer">
 
     <section class="contact-section" id="contact">
@@ -288,17 +196,20 @@
 
      
 
-        <form action="https://formspree.io/f/xjvlllpk" method="POST" class="form">
-          <input type="text" class="name1" id="name1" name="name" maxlength="30" placeholder="Text input" required />
-          <input type="text" class="name2" id="name2" name="name" maxlength="30" placeholder="Jeremy" required />
+        <form action="https://formspree.io/f/xjvlllpk" method="POST" class="form" id="contact_form">
 
-          <input class="email1" type="email" id="email1" name="email" placeholder="jeremy@gmail.com" required />
-          <input class="email2" type="email" id="email2" name="email" placeholder="Email Address" required />
+          <input type="text" class="name name1" id="name1" name="name" maxlength="30" placeholder="Text input" required />
+          <input type="text" class="name name2" id="name2" name="name" maxlength="30" placeholder="Jeremy" required />
 
-          <textarea class="textarea1" name="message" id="textarea1" maxlength="500" placeholder="Enter text here"
+          <input class="email email1" type="email" id="email1" name="email" placeholder="jeremy@gmail.com" required />
+          <input class="email email2" type="email" id="email2" name="email" placeholder="Email Address" required />
+          
+
+          <textarea class="textarea textarea1" name="message" id="textarea1" maxlength="500" placeholder="Enter text here"
             required></textarea>
-          <textarea class="textarea2" name="message" id="textarea2" maxlength="500"
+          <textarea class="textarea textarea2" name="message" id="textarea2" maxlength="500"
             placeholder="Write your message here" required></textarea>
+          
 
           <button id="see-project" class="see-prj" type="submit">See Project</button>
           <button id="see-project2" class="see-prj" type="submit">Send</button>
@@ -314,7 +225,8 @@
     <div class="short2 below-form">
       <img class="below-form" src="./background-shapes/desktop-version/long-footer-line.png" alt="horizontal-line">
     </div>
-
+    
+ 
     <!--social media icons-->
 
     <div class="bottom-footer">
