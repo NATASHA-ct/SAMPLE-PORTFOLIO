@@ -476,7 +476,6 @@ button.button:disabled {
   background-color: #2a2b33;
 }
 
-
 /* MODAL POP UP STYLES */
 .modalpopup {
   position: fixed;
@@ -1073,8 +1072,6 @@ button.button:disabled {
     justify-content: center;
     width: 50%;
   }
-
-
 
   /* ......contact form*..... */
   .footer {
