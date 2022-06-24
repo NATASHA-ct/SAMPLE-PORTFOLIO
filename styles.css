@@ -654,25 +654,25 @@ button.button:disabled {
 .name {
   font-size: 15px;
   line-height: 24px;
-  padding-left: 15px;
   width: 100%;
   height: 48px;
   color: #81818c;
   background-color: #fff;
   order: 0;
+  padding: 16px 15px 14px;
 }
 
 .email {
   background-color: #f7f3ff;
   border: 1px solid #9490ff;
   font-weight: 400;
-  font-size: 30px;
-  padding-left: 15px;
+  font-size: 15px;
   line-height: 24px;
   color: #191765;
   width: 100%;
   height: 48px;
   order: 1;
+  padding-left: 14px;
 }
 
 .error {
@@ -685,26 +685,30 @@ button.button:disabled {
   width: 100%;
   height: 48px;
   order: 1;
-  padding-left: 0.5px;
+  padding-left: 14px;
 }
 
 .textarea {
   background-color: #fff;
   color: #81818c;
   width: 100%;
-  padding-left: 15px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   height: 124px;
   order: 2;
+  padding-left: 14px;
+  padding-top: 11px;
 }
 
 ::placeholder {
   font-size: 15px;
   line-height: 24px;
   color: #81818c;
-  padding: 15px 16px 15px 16px;
+}
+
+.email::placeholder {
+  color: #191765;
 }
 
 #error_message {
