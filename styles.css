@@ -654,6 +654,7 @@ button.button:disabled {
 .name {
   font-size: 15px;
   line-height: 24px;
+  padding-left: 15px;
   width: 100%;
   height: 48px;
   color: #81818c;
@@ -665,7 +666,8 @@ button.button:disabled {
   background-color: #f7f3ff;
   border: 1px solid #9490ff;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 30px;
+  padding-left: 15px;
   line-height: 24px;
   color: #191765;
   width: 100%;
@@ -690,7 +692,7 @@ button.button:disabled {
   background-color: #fff;
   color: #81818c;
   width: 100%;
-  padding: 0.2em;
+  padding-left: 15px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
