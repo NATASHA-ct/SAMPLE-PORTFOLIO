@@ -1,81 +1,81 @@
-const menu = document.querySelector(".menu");
+const menu = document.querySelector('.menu');
 
-const navlist = document.querySelector(".nav-list");
+const navlist = document.querySelector('.nav-list');
 
-// Adding click event to the hamburger
+// ............ Adding click event to the hamburger.........................
 
-menu.addEventListener("click", () => {
-  menu.classList.toggle("active");
+menu.addEventListener('click', () => {
+  menu.classList.toggle('active');
 
-  navlist.classList.toggle("active");
+  navlist.classList.toggle('active');
 });
 
-document.querySelectorAll(".nav-link").forEach((n) =>
-  n.addEventListener("click", () => {
-    menu.classList.remove("active");
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  menu.classList.remove('active');
 
-    navlist.classList.remove("active");
-  })
-);
+  navlist.classList.remove('active');
+}));
 
-// Adding event to close icon on menu
-document.querySelector(".close-icon").addEventListener("click", () => {
-  menu.classList.remove("active");
+// ............Adding event to close icon on menu.............................
+document.querySelector('.close-icon').addEventListener('click', () => {
+  menu.classList.remove('active');
 
-  navlist.classList.remove("active");
+  navlist.classList.remove('active');
 });
 
-//popup menu------------------------------------------------------------------------------------------
-const allprojects = document.querySelector(".all-projects");
+// ...........Popup menu for harmburger........................................
+const allprojects = document.querySelector('.all-projects');
 
+// Array of Objects with projects area properties
 const portfolioObjects = [
   {
-    projectTitle: "project1",
-    projectTitleDesktop: "Multi-Post Stories",
-    tags: ["CSS", "HTML", "Bootstrap", "Ruby"],
+    projectTitle: 'project1',
+    projectTitleDesktop: 'Multi-Post Stories',
+    tags: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     description:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     // liveUrl:
     // sourceUrl:
   },
 
   {
-    projectTitle: "project2",
-    projectTitleDesktop: "Multi-Post Stories",
-    tags: ["CSS", "HTML", "Bootstrap", "Ruby"],
+    projectTitle: 'project2',
+    projectTitleDesktop: 'Multi-Post Stories',
+    tags: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     description:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     // liveUrl:
     // sourceUrl:
   },
   {
-    projectTitle: "project3",
-    projectTitleDesktop: "Multi-Post Stories",
-    tags: ["CSS", "HTML", "Bootstrap", "Ruby"],
+    projectTitle: 'project3',
+    projectTitleDesktop: 'Multi-Post Stories',
+    tags: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     description:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     // liveUrl:
     // sourceUrl:
   },
   {
-    projectTitle: "project4",
-    projectTitleDesktop: "Multi-Post Stories",
-    tags: ["CSS", "HTML", "Bootstrap", "Ruby"],
+    projectTitle: 'project4',
+    projectTitleDesktop: 'Multi-Post Stories',
+    tags: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     description:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     // liveUrl:
     // sourceUrl:
   },
 ];
-console.log(portfolioObjects[3])
 
+// .........Adding projects section to the html file..................................
+const modal = () => {
+  let cardportfolioObjects = '';
 
-//Adding projects section to the html file
-const modal= () => {
-  let cardportfolioObjects = "";
-
-  for (let projectsIndex = 0; projectsIndex < portfolioObjects.length;projectsIndex++ ) {
-
+  for (
+    let projectsIndex = 0;
+    projectsIndex < portfolioObjects.length;
+    projectsIndex += 1
+  ) {
     const card = `
           
             <article id="${portfolioObjects[projectsIndex].projectTitle}" class="project-container">
@@ -110,25 +110,21 @@ const modal= () => {
 };
 modal();
 
+// ...............MODAL POPUP for see project button....................
 
-//-------------MODAL POPUP---------------------------
- 
-const open = document.querySelectorAll(".see-prj");
- 
-open.forEach(btn =>{
- 
-btn.addEventListener("click", () => {
-         
-     
-      const modalpopup = document.querySelector(".modalpopup");
-       
-      modalpopup.innerHTML = `
-     
-        <article id="popup" class="modal-article">
+const open = document.querySelectorAll('.see-prj');
+
+open.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const modalpopup = document.querySelector('.modalpopup');
+
+    modalpopup.innerHTML = `
+             <article id="popup" class="modal-article">
  
               <h3 class="modal-title">
                   ${portfolioObjects[0].projectTitleDesktop}
                   <img src="./images/close.png" class="close-icon close2" id="close2">
+   
               </h3>
  
               <img
@@ -164,17 +160,45 @@ btn.addEventListener("click", () => {
           </article>
     
       `;
-      
-      allprojects.appendChild(modalpopup);
 
- //close icon
-     const close = document.querySelector("#close2");
+    allprojects.appendChild(modalpopup);
 
-      close.addEventListener("click", () => {
+    // close icon
+    const close = document.querySelector('#close2');
 
-        modalpopup.innerHTML= ``;
-      
+    close.addEventListener('click', () => {
+      modalpopup.innerHTML = '';
     });
-    });
-    });
- 
+  });
+});
+
+// .................... Contact validation form...................
+const contactForm = document.getElementById('contact_form');
+const email = document.getElementById('email');
+const errorMsg = document.getElementById('error_message');
+
+// Checking for any non alphabetic numbers
+const checkLowerCase = (email) => {
+  const validateLowerCase = /[A-Z]/g;
+
+  if (validateLowerCase.test(email)) {
+    return false;
+  }
+  return true;
+};
+
+// Submitting client data after correct validation with no errors
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (checkLowerCase(email.value.trim())) {
+    contactForm.submit();
+    errorMsg.style.display = 'none';
+    email.className = 'email';
+
+    // Display error message for invalid email
+  } else {
+    errorMsg.style.display = 'block';
+    email.className = 'error';
+  }
+});
