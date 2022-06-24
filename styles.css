@@ -445,7 +445,6 @@ body {
 
 .see-prj {
   background-color: #7d73fc;
-  color: #000;
   width: 89px;
   height: 48px;
   border: none;
@@ -453,10 +452,15 @@ body {
 }
 
 button {
+  color: #dcdce8;
   background-color: #7d73fc;
   width: 89px;
   height: 48px;
   border: none;
+}
+
+.form-button {
+  order: 3;
 }
 
 button.button:enabled {
@@ -547,7 +551,6 @@ button.button:disabled {
 }
 
 .modal-tools {
-  /* height:25%; */
   order: 2;
 }
 
@@ -648,7 +651,7 @@ button.button:disabled {
   order: 1;
 }
 
-.name1 {
+.name {
   font-size: 15px;
   line-height: 24px;
   width: 100%;
@@ -658,11 +661,7 @@ button.button:disabled {
   order: 0;
 }
 
-.name2 {
-  display: none;
-}
-
-.email1 {
+.email {
   background-color: #f7f3ff;
   border: 1px solid #9490ff;
   font-weight: 400;
@@ -674,16 +673,20 @@ button.button:disabled {
   order: 1;
 }
 
-.email2 {
-  display: none;
-}
-
-.email1::placeholder {
+.error {
+  background-color: #f7f3ff;
+  border: 1px solid #9490ff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
   color: #191765;
-  line-height: 132%;
+  width: 100%;
+  height: 48px;
+  order: 1;
+  padding-left: 0.5px;
 }
 
-.textarea1 {
+.textarea {
   background-color: #fff;
   color: #81818c;
   width: 100%;
@@ -695,10 +698,6 @@ button.button:disabled {
   order: 2;
 }
 
-.textarea2 {
-  display: none;
-}
-
 ::placeholder {
   font-size: 15px;
   line-height: 24px;
@@ -706,12 +705,16 @@ button.button:disabled {
   padding: 15px 16px 15px 16px;
 }
 
-#see-project {
+#error_message {
+  font-style: italic;
+  color: #f00;
+  text-align: center;
   order: 3;
+  display: none;
 }
 
-#see-project2 {
-  display: none;
+#formbutton {
+  order: 3;
 }
 
 /* --end of form-- */
@@ -1120,79 +1123,6 @@ button.button:disabled {
 
   .form {
     width: 90%;
-  }
-
-  .name2 {
-    display: block;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    color: #191765;
-    padding-left: 9px;
-    background-color: #fff;
-    width: 100%;
-    height: 48px;
-    order: 0;
-  }
-
-  .name2::placeholder {
-    color: #191765;
-    font-family: "Inter", sans-serif;
-  }
-
-  .name1 {
-    display: none;
-  }
-
-  .email2 {
-    width: 100%;
-    height: 48px;
-    display: block;
-    background-color: #f7f3ff;
-    border: 1px solid #9490ff;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    color: #6d6c70;
-    padding-left: 9px;
-  }
-
-  .email1 {
-    display: none;
-  }
-
-  .email2::placeholder {
-    color: #6d6c70;
-    font-family: "Inter", sans-serif;
-    order: 1;
-  }
-
-  .textarea2 {
-    display: block;
-    width: 100%;
-    background-color: #fff;
-    color: #6d6c70;
-    padding: 12px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    height: 124px;
-    order: 2;
-    line-height: 20px;
-    margin-bottom: 2em;
-  }
-
-  .textarea1 {
-    display: none;
-  }
-
-  .textarea2::placeholder {
-    padding: 0;
   }
 
   #see-project {
