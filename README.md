@@ -15,7 +15,7 @@
 
 ## Live Demo (available)
 
-[Live Demo Link] (https://natasha-ct.github.io/MY-PORTFOLIO/)
+[Live Demo Link]  (https://natasha-ct.github.io/MY-PORTFOLIO/)
 
 
 ### Prerequisites
