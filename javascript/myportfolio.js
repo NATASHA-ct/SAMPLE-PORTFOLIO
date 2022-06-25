@@ -203,43 +203,19 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-//....Local storage....//
+// .................Preserving data using local storage........
 
-const clientName = document.getElementById("name");
-const clientEmail = document.getElementById("email");
-const message = document.getElementById("textarea");
+let clientName = document.getElementById('name');
+let clientEmail = document.getElementById('email');
+let message = document.getElementById('textarea');
 
-// //Adding listner for event handling
-// form.addEventListener("input", () => {
-//   localStorage.setItem("Name", `${clientName.value}`);
-//   localStorage.setItem("Email", `${clientEmail.value}`);
-//   localStorage.setItem("TextArea", `${message.value}`);
-// });
-// //get values from local storage
-// clientName.value = localStorage.getItem("Name");
-// clientEmail.value = localStorage.getItem("Email");
-// message.value = localStorage.getItem("TextArea");
-
-const saveDetails = () => {
-  const setData = {
-    nameGiven: clientName.value,
-    emailGiven: clientEmail.value,
-    messageGiven: message.value,
-  };
-  localStorage.setItem("StoredDetails", JSON.stringify(setData));
-};
-const getSave = () => {
-  const getData = JSON.parse(localStorage.getItem("StoredDetails"));
-  clientName.value = getData.nameGiven;
-  clientEmail.value = getData.emailGiven;
-  message.value = getData.messageGiven;
-};
-
-if (!localStorage.getItem("savedData")) {
-  const savedData = { nameGiven: "", emailGiven: "", messageGiven: "" };
-  localStorage.setItem("savedData", JSON.stringify(savedData));
-} else {
-  getSave();
-}
-
-contactForm.addEventListener("change", saveDetails);
+// Adding listner for event handling
+contactForm.addEventListener('input', () => {
+  localStorage.setItem('Name', `${clientName.value}`);
+  localStorage.setItem('Email', `${clientEmail.value}`);
+  localStorage.setItem('TextArea', `${message.value}`);
+});
+// get values from local storage
+clientName.value = localStorage.getItem('Name');
+clientEmail.value = localStorage.getItem('Email');
+message.value = localStorage.getItem('TextArea');
