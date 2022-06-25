@@ -203,4 +203,4 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-const userName = document.getElementById('username');const mailAdd = document.getElementById('email');const textArea = document.getElementById('text_area');
+
