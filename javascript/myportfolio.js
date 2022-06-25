@@ -205,9 +205,9 @@ contactForm.addEventListener('submit', (event) => {
 
 // .................Preserving data using local storage........
 
-const clientName = document.getElementById('name');
-const clientEmail = document.getElementById('email');
-const message = document.getElementById('textarea');
+let clientName = document.getElementById('name');
+let clientEmail = document.getElementById('email');
+let message = document.getElementById('textarea');
 
 // Adding listner for event handling
 contactForm.addEventListener('input', () => {
