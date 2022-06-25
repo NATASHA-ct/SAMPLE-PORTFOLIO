@@ -203,4 +203,19 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
+// .................Preserving data using local storage........
 
+const clientName = document.getElementById('name');
+const clientEmail = document.getElementById('email');
+const message = document.getElementById('textarea');
+
+// Adding listner for event handling
+contactForm.addEventListener('input', () => {
+  localStorage.setItem('Name', `${clientName.value}`);
+  localStorage.setItem('Email', `${clientEmail.value}`);
+  localStorage.setItem('TextArea', `${message.value}`);
+});
+// get values from local storage
+clientName.value = localStorage.getItem('Name');
+clientEmail.value = localStorage.getItem('Email');
+message.value = localStorage.getItem('TextArea');
