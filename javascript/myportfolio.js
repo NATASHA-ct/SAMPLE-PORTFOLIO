@@ -202,3 +202,5 @@ contactForm.addEventListener('submit', (event) => {
     email.className = 'error';
   }
 });
+
+const userName = document.getElementById('username');const mailAdd = document.getElementById('email');const textArea = document.getElementById('text_area');
