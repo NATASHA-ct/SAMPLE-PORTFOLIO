@@ -6,6 +6,18 @@
 > Worked with github flow throughout the project.
 > Made use of Figma platform and templates as design for the project.
 
+ I managed to add the following:
+ 1: Setup and mobile version skeleton
+ 2: Mobile version
+ 3: Contact form 
+ 4: Desktop version
+ 5: Application deploy
+ 6: Evaluate accessibility (pair programming)
+ 7: Mobile menu (pair programming)
+ 8: Details modal 
+ 9: Validate contact form 
+ 10: Preserve data in the browser 
+
 
 ## Built With
 
