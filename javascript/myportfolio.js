@@ -32,12 +32,12 @@ const allprojects = document.querySelector(".all-projects");
 const portfolioObjects = [
   {
     projectTitle: "project1",
-    projectTitleDesktop: "Online Shop",
-    tags: ["CSS", "HTML", "JavaScript ES6", "React"],
+    projectTitleDesktop: "Top-rated-tv-shows-Web-app",
+    tags: ["HTML", "CSS", "Es6", "REST API"],
     description:
-      "A web application based on an external API which contains information about Products for sell. The web app allows the user to view one page with a list of Products that could be filtered by some parameters. it's a list of metrics that can be filtered by each specific item on sell. It also shows one page for the item details.",
-    liveUrl: "https://prismatic-banoffee-c996a7.netlify.app/",
-    sourceUrl: "https://github.com/NATASHA-ct/onlineshop",
+      " A web application based on an external API which contains information about TV shows.The user can like the shows that  and comments on what they think about it.I made use of the involvement API to save this interaction information.",
+    liveUrl: "https://natasha-ct.github.io/Top-rated-tv-shows-Web-app/dist/",
+    sourceUrl: "https://github.com/NATASHA-ct/Top-rated-tv-shows-Web-app",
     image: "./images/projects/tv.png",
   },
 
@@ -51,8 +51,19 @@ const portfolioObjects = [
     sourceUrl: "https://github.com/NATASHA-ct/budget-app",
     image: "./images/projects/budget.png",
   },
+
   {
     projectTitle: "project3",
+    projectTitleDesktop: "Online Shop",
+    tags: ["CSS", "HTML", "JavaScript ES6", "React"],
+    description:
+      "A web application based on an external API which contains information about Products for sell. The web app allows the user to view one page with a list of Products that could be filtered by some parameters. it's a list of metrics that can be filtered by each specific item on sell. It also shows one page for the item details.",
+    liveUrl: "https://prismatic-banoffee-c996a7.netlify.app/",
+    sourceUrl: "https://github.com/NATASHA-ct/onlineshop",
+    image: "./images/projects/onlineshop.png",
+  },
+  {
+    projectTitle: "project4",
     projectTitleDesktop: "Digital Library",
     tags: ["HTML", "CSS", "JavaScript", "React"],
     description:
@@ -61,16 +72,7 @@ const portfolioObjects = [
     sourceUrl: "https://github.com/NATASHA-ct/DigitalLibrary",
     image: "./images/projects/digitallib.png",
   },
-  {
-    projectTitle: "project4",
-    projectTitleDesktop: "Top-rated-tv-shows-Web-app",
-    tags: ["HTML", "CSS", "Es6", "REST API"],
-    description:
-      " A web application based on an external API which contains information about TV shows. the web app lets you like the shows that you like the most and comment what you think about them making use of an involvement API to save this interaction information.",
-    liveUrl: "https://natasha-ct.github.io/Top-rated-tv-shows-Web-app/dist/",
-    sourceUrl: "https://github.com/NATASHA-ct/Top-rated-tv-shows-Web-app",
-    image: "./images/projects/tv.png",
-  },
+
   {
     projectTitle: "project5",
     projectTitleDesktop: "Online Math Calculator",
@@ -154,7 +156,7 @@ open.forEach((btn, index) => {
  
               <img
                 class="modal-image"
-                src="./images/mobile/modalImgPlaceholder.png"
+                src="${portfolioObjects[index].image}"
                 alt="project placeholder image"
               ></img>
               <div class="modal-description">
