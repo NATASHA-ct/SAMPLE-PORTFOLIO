@@ -32,10 +32,10 @@ const allprojects = document.querySelector(".all-projects");
 const portfolioObjects = [
   {
     projectTitle: "project1",
-    projectTitleDesktop: "Top-rated-tv-shows-Web-app",
+    projectTitleDesktop: "Top-rated-tv-shows",
     tags: ["HTML", "CSS", "Es6", "REST API"],
     description:
-      " A web application based on an external API which contains information about TV shows.The user can like the shows that  and comments on what they think about it.I made use of the involvement API to save this interaction information.",
+      "A web application that allows users to engage with information about TV shows through an external API. The application enables users to like TV shows and leave comments about their thoughts on them.An involvement API was utilized to save this engagement data.",
     liveUrl: "https://natasha-ct.github.io/Top-rated-tv-shows-Web-app/dist/",
     sourceUrl: "https://github.com/NATASHA-ct/Top-rated-tv-shows-Web-app",
     image: "./images/projects/tv.png",
@@ -46,7 +46,7 @@ const portfolioObjects = [
     projectTitleDesktop: "Budget- App",
     tags: ["Ruby", "Ruby on Rails", "Postgresql", "CSS3"],
     description:
-      " A web application that allows users to keep track of their expenses and categories. have a list of transactions associated with a category, so that the user can see how much money it spent and on what. Manage your own money, manage your own life.",
+      " A web application that helps users manage their expenses by categorizing them and keeping track of transactions. The application allows the user to see how much money they have spent in each category, helping them to make informed decisions about their spending habits. The goal of the application is to empower users to take control of their finances and manage their lives effectively.",
     liveUrl: "",
     sourceUrl: "https://github.com/NATASHA-ct/budget-app",
     image: "./images/projects/budget.png",
@@ -57,7 +57,7 @@ const portfolioObjects = [
     projectTitleDesktop: "Online Shop",
     tags: ["CSS", "HTML", "JavaScript ES6", "React"],
     description:
-      "A web application based on an external API which contains information about Products for sell. The web app allows the user to view one page with a list of Products that could be filtered by some parameters. it's a list of metrics that can be filtered by each specific item on sell. It also shows one page for the item details.",
+      "A web application app that allows users to view and filter a list of products for sale using an external API. The application includes a page with a list of products that can be filtered using various parameters, as well as a page displaying detailed information about each individual product. The user can use the application to view metrics and find products that meet their specific criteria.",
     liveUrl: "https://prismatic-banoffee-c996a7.netlify.app/",
     sourceUrl: "https://github.com/NATASHA-ct/onlineshop",
     image: "./images/projects/onlineshop.png",
@@ -67,7 +67,7 @@ const portfolioObjects = [
     projectTitleDesktop: "Digital Library",
     tags: ["HTML", "CSS", "JavaScript", "React"],
     description:
-      " A webapp that allows the user to: Display a list of books. Add a new book. Remove a selected book.It has been developed using React Redux and tested using Jest.",
+      "A web application developed using React and Redux that allows users to view a list of books, add new books, and remove selected books. The application has been tested using Jest. It provides users with a simple and convenient way to manage their book collection.",
     liveUrl: "https://deft-seahorse-76e953.netlify.app/",
     sourceUrl: "https://github.com/NATASHA-ct/DigitalLibrary",
     image: "./images/projects/digitallib.png",
@@ -78,7 +78,7 @@ const portfolioObjects = [
     projectTitleDesktop: "Online Math Calculator",
     tags: ["HTML", "CSS", "Es6", "React"],
     description:
-      "It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.",
+      "This a Single Page Application that allows users to perform simple calculations and read random quotes related to math. This app provides a quick and easy way for users to access these simple tools and resources.",
     liveUrl: "https://phenomenal-rugelach-2147c0.netlify.app/",
     sourceUrl: "https://github.com/NATASHA-ct/REACT-Math-Calculator",
     image: "./images/projects/maths.png",
@@ -88,7 +88,7 @@ const portfolioObjects = [
     projectTitleDesktop: "Business-Seminar-Website",
     tags: ["HTML", "CSS", "Es6", "Webpack"],
     description:
-      "Business-Seminar-Website with information about dates , speakers, tickets, attendance location. It will help people to be productive at work while still having a life outside of it.",
+      "Business-Seminar-Website that provides information about the event, including the dates, speakers, tickets, and attendance location. The goal of the seminar is to help people be productive at work while still maintaining a healthy work-life balance.",
     liveUrl: "https://natasha-ct.github.io/Business-Seminar-Website/",
     sourceUrl: "https://github.com/NATASHA-ct/Business-Seminar-Website",
     image: "./images/projects/business.png",
@@ -208,7 +208,7 @@ open.forEach((btn, index) => {
 });
 
 // .................... Contact validation form...................
-const contactForm = document.getElementById("contact_form");
+const contactForm = document.getElementById("contact_form").reset();
 const email = document.getElementById("email");
 const errorMsg = document.getElementById("error_message");
 
@@ -230,7 +230,8 @@ contactForm.addEventListener("submit", (event) => {
     contactForm.submit();
     errorMsg.style.display = "none";
     email.className = "email";
-
+    
+    document.getElementById("contact_form").reset();
     // Display error message for invalid email
   } else {
     errorMsg.style.display = "block";

@@ -20,6 +20,11 @@ body {
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
 /* header styles */
 .header {
   background-image: url("./background-shapes/mobile-version/header-area-background.png");
@@ -484,6 +489,7 @@ body {
   order: 3;
 }
 
+
 button {
   color: #dcdce8;
   background-color: #7d73fc;
@@ -541,23 +547,24 @@ button.button:disabled {
   align-items: center;
   padding: 24px;
   width: 75%;
-  background-color: rgba(255, 255, 255, 0.16);
-  border: 1px solid #fff;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  background-color: #ffffff29;
+  border: 1px solid #615cf54f;
+  box-shadow: 0 48px 48px #252f8914;
 }
 
 .modal-title {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  margin-bottom: 1em;
 }
 
 .modal-image {
-  width: 42em;
-  padding: 34px 0;
-}
+    width: 80%;
+    margin-bottom: 2em;
+  }
 
 .close2 {
   margin-right: 0;
@@ -602,8 +609,7 @@ button.button:disabled {
 
 .SeeLive {
   display: flex;
-  width: 90%;
-  padding-left: 0.6em;
+   padding-left: 0.6em;
   color: #fff;
   align-items: center;
   gap: 12px;
@@ -613,7 +619,6 @@ button.button:disabled {
   display: flex;
   text-align: center;
   color: #fff;
-  width: 100%;
   align-items: center;
   padding-left: 0.6em;
   gap: 12px;
@@ -1053,23 +1058,18 @@ button.button:disabled {
 
   .modalpopup {
     background-color: hsla(242, 53%, 20%, 0.819);
-    /* background-image: url("./background-shapes/desktop-version/header-area-background.png");
-    background-repeat: no-repeat;
     background-size: 100%;
-    background-position: absolute; */
-    width:100%;
   }
 
   .modalpopup::-webkit-scrollbar {
     display: none;
   }
 
-  .modal-article {
-    width: 90%;
-  }
-
   .modal-image {
+    width: 42em;
+    padding: 34px 0;
     height: 400px;
+    
   }
 
   .modal-title {
@@ -1089,6 +1089,7 @@ button.button:disabled {
 
   .close2 {
     display: inline-block;
+    padding-left: 4em;
   }
 
   .modal-tools > li:last-child {
@@ -1101,7 +1102,7 @@ button.button:disabled {
     width: 60%;
     flex-direction: row;
     gap: 24px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     order: 2;
   }
@@ -1113,7 +1114,6 @@ button.button:disabled {
 
   .SeeSource {
     justify-content: center;
-    width: 50%;
   }
 
   /* ......contact form*..... */
