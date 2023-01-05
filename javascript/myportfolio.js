@@ -106,7 +106,7 @@ const modal = () => {
           
             <article id="${portfolioObjects[projectsIndex].projectTitle}" class="project-container">
 
-                <img class="project-image" src="./images/projects/tv.png" alt="project placeholder image">
+                <img class="project-image" src="${portfolioObjects[projectsIndex].image}" alt="project placeholder image">
                 </img>
 
                 <div class="description">
