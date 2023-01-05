@@ -4,7 +4,7 @@
 html {
   width: 100%;
   box-sizing: border-box;
-  background-color: #191765;
+  background-color: #040623;
   color: #f5f5f5;
 }
 
@@ -73,14 +73,13 @@ body {
   flex-direction: column;
   position: fixed;
   inset: 0;
-  background-color: #191765;
+  background-color: #040623;
   background-image: url(./background-shapes/mobile-version/hamburgerbackground.png);
   background-repeat: no-repeat;
   background-size: 100%;
   transform: translateX(100%);
   list-style: none;
   transition: 0.7s;
-  padding-top: 1em;
   padding-left: 2em;
   gap: 2em;
 }
@@ -262,6 +261,7 @@ body {
   order: 0;
   list-style: none;
   padding: 12px 10px;
+  margin: 3em 0;
   gap: 23px;
 }
 
@@ -954,7 +954,7 @@ button.button:disabled {
   }
 
   /* second project */
-  #project2 .project-image {
+  #project2 .project-image, #project6 .project-image {
     order: 1;
   }
 
