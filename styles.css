@@ -971,7 +971,7 @@ button.button:disabled {
   .project-container {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items:center;
     width: 90%;
   }
 
@@ -986,7 +986,6 @@ button.button:disabled {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-height: 405px;
     gap: 24px;
     width: 45%;
   }
