@@ -228,8 +228,7 @@ a{
 }
 
 .my-ability {
-    
-    font-size: 45px;
+    font-size: 40px;
 }
 
 /* ---skills--- */
@@ -441,8 +440,7 @@ a{
 
 .all-projects {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 48px 24px 0 24px;
   grid-gap: 40px;
   width: 85%;
@@ -529,8 +527,7 @@ a{
     align-items: center;
     padding: 0 20px;
     text-align: center;
-    /* order: 0; */
-    /* flex-wrap: nowrap; */
+    gap: 12px;
     padding-bottom: 4em;
 }
 
@@ -979,7 +976,7 @@ button.button:disabled {
   }
 
   .my-name {
-    font-size: 50px;
+    font-size: 40px;
     color: #9391ff;
     
   }
@@ -990,14 +987,13 @@ button.button:disabled {
   }
 
   .my-ability {
-     width: 547px;
-    /* line-height: 60px; */
-    color: #b3bac5;
+     width: 447px;
+     color: #b3bac5;
     
   }
 
   .introduction button{
-    width: 25%;
+    width: 20%;
     font-size: 22px;
   }
 
@@ -1077,7 +1073,6 @@ button.button:disabled {
 
   .work-section {
     margin-top: 1.9em;
-    margin-bottom: 14.5em;
   }
 
   .work-heading2 {
