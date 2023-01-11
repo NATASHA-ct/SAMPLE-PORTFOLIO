@@ -1,10 +1,11 @@
 /* this is the fonts declartion */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
 html {
   width: 100%;
   box-sizing: border-box;
-  background-color: #040623;
+  background-color: #050a30;
   color: #f5f5f5;
 }
 
@@ -22,36 +23,62 @@ body {
 
 a{
   text-decoration: none;
-  color: #fff;
+  color: rgb(232, 239, 242);
+}
+
+.resume{
+  border: 2px solid hsl(242deg 88% 66% / 50%);
+  border-radius: 13px;
+  padding: 4px;
 }
 
 /* header styles */
-.header {
-  background-image: url("./background-shapes/mobile-version/header-area-background.png");
+ .nw-header {
+  background-image: url("./background-shapes/desktop-version/w.png"); 
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: absolute;
+  margin-top: 8em;
+  border-collapse: collapse;
+} 
+
+.box{
+  box-shadow: #2a2b33;
+   transform: translate(0%);
+  transition: transform 10s ease;
+}
+
+.box:nth-of-type(even){
+   transform: translateX(-400%);
+}
+
+.box.show{
+  transform: translate(0%);
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 2.5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-right: 24px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.5em;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #050a30;
+    justify-content: space-between;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
 }
 
 .logo {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 16px;
-  color: #fff;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 16px;
+    color: hsl(242deg 86% 76%);
+    margin-left: 24px;
 }
 
 .menu {
@@ -78,7 +105,7 @@ a{
   flex-direction: column;
   position: fixed;
   inset: 0;
-  background-color: #040623;
+  background-color: #050a30;
   background-image: url(./background-shapes/mobile-version/hamburgerbackground.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -111,13 +138,28 @@ a{
 }
 
 .nav-list li a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 20px;
-  color: #fff;
+  background-image: linear-gradient( to right, #918df6, #918df6 , #918df6, hsl(240deg 7% 97%) 50% );
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-list li a:before {
+  content: '';
+  background-color: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+.nav-list li a:hover {
+  background-position: 0;
+  color: #7d73fc;
 }
 
 .mail-link {
@@ -127,45 +169,52 @@ a{
 .top-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  
+}
+
+.all-skills{
+  display: flex;
+  flex-direction: column;
+   align-items: center;
 }
 
 .introduction {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin: 47px 24px 33px 24px;
+  margin: 19px 23px 13em 19px;
+  align-items:flex-start;
+  font-family: 'Poppins', sans-serif;
 }
 
 .my-name {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 72px;
-  text-align: center;
-  letter-spacing: 0.37px;
-  color: #7d73fc;
-  margin-bottom: 12px;
-  order: 0;
+  background-image: linear-gradient(
+    -225deg,
+    #cf3ebc 0%,
+    #7a5a10 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+     
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .my-job-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #edecff;
-  margin-bottom: 40px;
-  order: 1;
-  border-right: 3px solid purple;
-  animation: typing 6s steps(19);
-  overflow: hidden;
-  white-space: nowrap;
-  width: 16ch;
+    border-radius: 50px; 
 }
 
 @keyframes typing {
@@ -179,33 +228,47 @@ a{
 }
 
 .my-ability {
-  width: 327px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #c8c8d4;
-  order: 2;
+    
+    font-size: 45px;
 }
 
 /* ---skills--- */
-.my-skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: flex-start;
-  grid-gap: 24px;
-  margin-top: 32px;
-  margin-bottom: 33px;
+.t-skills{
+  font-family: "Roboto", sans-serif;
+  font-size:60px;
+  margin-bottom: 0.8em;
+  text-shadow: 4px 1px 4px #aa98ed;
 }
 
-.languages.frameworks.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.horizontal-line{
+  width: 40%;
 }
+.my-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap:20px;
+  margin-top: 32px;
+  margin-bottom: 33px;
+  justify-content: center
+   
+}
+
+.languages , .frameworks ,.skills {
+  border-radius: 16px;
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(11.9px);
+  -webkit-backdrop-filter: blur(11.9px);
+  border: 1px solid #2a3a7b4d;
+  background-color: #2b2c48;
+  padding: 60px;}
+
+    .grow {
+          transition: all .2s ease-in-out;
+    }
+          .grow:hover {
+            transform: scale(0.8);
+          }
+        
 
 .languages {
   gap: 12px;
@@ -222,11 +285,13 @@ a{
   order: 2;
 }
 
+
+
 .skill-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 30px;
   line-height: 24px;
   align-items: center;
   letter-spacing: 0.03em;
@@ -242,7 +307,7 @@ a{
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 24px;
   color: #f5f5ff;
   padding: 0 7.16667px;
@@ -336,11 +401,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./background-shapes/mobile-version/projects-area-background.png");
-  background-repeat: no-repeat;
-  background-size: 100%, 555px;
-  background-position: cover;
-}
+  }
 
 .title {
   display: flex;
@@ -388,21 +449,38 @@ a{
 }
 
 .project-image {
-    width: 99%;
+    width: 100%;
     max-height: 448px;
     background-color: #fff;
     order: 0;
+    border-radius: 10px;
+    display: block;
   }
 
 .project-container {
+ border-radius: 10px;
+ position: relative;
+ overflow: hidden;
+ height: 350px;
+} 
+
+.project-container:hover {
+  border: 4px solid #d094e6;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+/* .project-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 24px;
   padding: 0.5em;
-}
+} */
 
-.project-container
+/* .project-container
 {
     position:relative;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -424,9 +502,9 @@ a{
   right:10px;
     left:auto;
     transform:skew(8deg) rotate(3deg);
-}
+} */
 
-.description {
+/* .description {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -434,6 +512,26 @@ a{
   align-content: flex-start;
   padding: 0.5em;
   gap: 24px;
+} */
+
+.layer{
+  display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(359deg, #35323fe7 0%, #1f1a52 100%);
+    opacity: 0.8;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    /* order: 0; */
+    /* flex-wrap: nowrap; */
+    padding-bottom: 4em;
 }
 
 .project-title {
@@ -449,12 +547,8 @@ a{
 }
 
 .project-infor {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #dcdce8;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
   order: 1;
 }
 
@@ -483,8 +577,8 @@ a{
 
 .see-prj {
   background-color: #7d73fc;
-  width: 89px;
-  height: 48px;
+  width: 60%;
+  height: 20px;
   border: none;
   order: 3;
 }
@@ -493,9 +587,11 @@ a{
 button {
   color: #dcdce8;
   background-color: #7d73fc;
-  width: 89px;
-  height: 48px;
+  width: 100px;
+  height: 40px;
   border: none;
+  border-radius: 8px;
+  font-size: 0.7rem;
 }
 
 .form-button {
@@ -642,14 +738,16 @@ button.button:disabled {
   flex-direction: column;
   margin-bottom: 71px;
   grid-gap: 40px;
+  
 }
 
 .contact-instructions {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-start;
   gap: 24px;
   order: 0;
+  padding-bottom: 98px;
 }
 
 .contact-us {
@@ -673,11 +771,54 @@ button.button:disabled {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
   color: #f5f5ff;
   order: 1;
 }
 
+.contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  gap: 7px;
+}
+
+.contacts a{
+    display: flex;
+    position: relative;
+    gap: 19%;
+    width: 72%;
+    padding: 8px;
+    border-radius: 14px;
+    background-color: #170446;
+    font-size: 18px;
+    color: #83858af7;
+    transition: .5s;
+    font-family: "Inter", sans-serif;
+}
+
+.contacts a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a58be6;
+  transition: .5s;
+  transform: scale(.9);
+  }
+
+.contacts a:hover::before{
+ transform: scale(1.1);
+  box-shadow: 0 0 15px #8670e9;
+}
+
+.contacts a:hover {
+  color: #bc98ef;
+  box-shadow: 0 0 5px #c8be38a4;
+  text-shadow: 0 0 5px #ffee10;
+}
 /* form */
 .form {
   display: flex;
@@ -698,6 +839,7 @@ button.button:disabled {
   background-color: #fff;
   order: 0;
   padding: 16px 15px 14px;
+  border-radius: 16px;
 }
 
 .email {
@@ -711,6 +853,7 @@ button.button:disabled {
   height: 48px;
   order: 1;
   padding-left: 14px;
+  border-radius: 16px;
 }
 
 .error {
@@ -737,6 +880,7 @@ button.button:disabled {
   order: 2;
   padding-left: 14px;
   padding-top: 11px;
+  border-radius: 16px;
 }
 
 ::placeholder {
@@ -785,18 +929,7 @@ button.button:disabled {
 /* -----desktop-version------- */
 
 @media screen and (min-width: 768px) {
-  .header {
-    background-image: url("./background-shapes/desktop-version/header-area-background.png");
-  }
 
-  /* ---navbar--- */
-  .nav {
-    margin: 1.5em 5.6em 1.6em 4.5em;
-  }
-
-  .logo {
-    line-height: 20px;
-  }
 
   .menu {
     display: none;
@@ -821,7 +954,7 @@ button.button:disabled {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 20px;
     color: #fff;
   }
@@ -840,32 +973,39 @@ button.button:disabled {
 
   /* --introduction section-- */
   .introduction {
-    width: 61%;
+    width: 81%;
+    padding-left: 2%;
+    padding-top: 8em;
   }
 
   .my-name {
-    font-size: 90px;
+    font-size: 50px;
     color: #9391ff;
-    margin-top: 0.9em;
+    
   }
 
   .my-job-title {
-    font-size: 40px;
-    color: #dfe1e6;
-    margin-bottom: 2em;
+     color: #6a67da;
+    
   }
 
   .my-ability {
-    width: 447px;
-    line-height: 32px;
+     width: 547px;
+    /* line-height: 60px; */
     color: #b3bac5;
+    
+  }
+
+  .introduction button{
+    width: 25%;
+    font-size: 22px;
   }
 
   .my-skills {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: flex-start;
-    width: 447px;
+    width: 60%;
   }
 
   .skills-title {
@@ -874,7 +1014,6 @@ button.button:disabled {
   }
 
   .skill-list {
-    font-size: 13.1389px;
     line-height: 194%;
     color: #fff;
   }
@@ -887,7 +1026,7 @@ button.button:disabled {
   .short2 {
     display: flex;
     justify-content: center;
-    width: 71%;
+    width: 91%;
   }
 
   .long {
@@ -925,8 +1064,7 @@ button.button:disabled {
 
   /* ----main section---- */
   .main {
-    background-image: url("./background-shapes/desktop-version/project-area-background.png");
-    margin-top: 12em;
+    margin-top: 4.5em;
   }
 
   .title {
@@ -938,20 +1076,20 @@ button.button:disabled {
   }
 
   .work-section {
-    margin-top: 1.5em;
+    margin-top: 1.9em;
     margin-bottom: 14.5em;
   }
 
   .work-heading2 {
     display: block;
-    margin: 0 24px 33px 0;
-    width: 85%;
     text-align: left;
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 40px;
-    color: #938fff;
+    color: hsl(240deg 59% 96%);
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    margin-bottom: 0.8em;
+    text-shadow: 4px 1px 4px #aa98ed;
   }
 
   .work-heading1 {
@@ -967,28 +1105,34 @@ button.button:disabled {
     padding: 0;
     gap: 10em;
   }
+  
+.nw-all{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap:30px;
+}
 
-  .project-container {
+
+  /* .project-container {
     display: flex;
     flex-direction: row;
     align-items:center;
     width: 90%;
-  }
-
+  } */
+/* 
   .project-image {
     width: 55%;
     max-height: 448px;
     background-color: #fff;
     order: 0;
-  }
+  } */
 
-  .description {
+  /* .description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
     width: 45%;
-  }
+  } */
 
   /* second project */
   #project2 .project-image, #project6 .project-image {
@@ -1011,7 +1155,7 @@ button.button:disabled {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     color: #fff;
@@ -1022,19 +1166,13 @@ button.button:disabled {
   .project-infor {
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #dfe1e6;
-    margin: 0;
-    padding: 0;
-    order: 1;
-  }
+    }
 
   .project-list {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .used-tools {
@@ -1125,8 +1263,12 @@ button.button:disabled {
   }
 
   .contact-section {
+     flex-direction: row;
+    }
+
+  .contact-section {
     align-items: center;
-    width: 65%;
+    width: 95%;
   }
 
   .contact-instructions {
@@ -1154,7 +1296,6 @@ button.button:disabled {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    text-align: center;
     color: #ebebff;
     flex: none;
     order: 1;

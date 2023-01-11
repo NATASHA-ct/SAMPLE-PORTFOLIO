@@ -44,7 +44,7 @@ const portfolioObjects = [
   {
     projectTitle: "project2",
     projectTitleDesktop: "Budget- App",
-    tags: ["Ruby", "Ruby on Rails", "Postgresql", "CSS3"],
+    tags: ["Ruby", "Ruby", "Postgresql", "CSS3"],
     description:
       " A web application that helps users manage their expenses by categorizing them and keeping track of transactions. The application allows the user to see how much money they have spent in each category, helping them to make informed decisions about their spending habits. The goal of the application is to empower users to take control of their finances and manage their lives effectively.",
     liveUrl: "",
@@ -55,7 +55,7 @@ const portfolioObjects = [
   {
     projectTitle: "project3",
     projectTitleDesktop: "Online Shop",
-    tags: ["CSS", "HTML", "JavaScript ES6", "React"],
+    tags: ["CSS", "HTML", "ES6", "React"],
     description:
       "A web application app that allows users to view and filter a list of products for sale using an external API. The application includes a page with a list of products that can be filtered using various parameters, as well as a page displaying detailed information about each individual product. The user can use the application to view metrics and find products that meet their specific criteria.",
     liveUrl: "https://prismatic-banoffee-c996a7.netlify.app/",
@@ -111,7 +111,7 @@ const modal = () => {
                 <img class="project-image" src="${portfolioObjects[projectsIndex].image}" alt="project placeholder image">
                 </img>
 
-                <div class="description">
+                <div class="description layer">
                     <h3 class="project-title">${portfolioObjects[projectsIndex].projectTitleDesktop}
                     </h2>
                     <p class="project-infor">${portfolioObjects[projectsIndex].description}</p>
@@ -255,3 +255,20 @@ contactForm.addEventListener("input", () => {
 clientName.value = localStorage.getItem("Name");
 clientEmail.value = localStorage.getItem("Email");
 message.value = localStorage.getItem("TextArea");
+// ....................
+
+const boxes = document.querySelectorAll('.box') 
+window.addEventListener('scroll',checkBoxes);
+ console.log(checkBoxes());
+
+function checkBoxes(){
+    const triggerBottom = window.innerHeight / 5 * 4;
+    boxes.forEach(box =>{
+        const boxTop = box.getBoundingClientRect().top;
+        if(boxTop < triggerBottom){
+            box.classList.add('show');
+        }else{
+            box.classList.remove('show');
+        }
+    })
+}

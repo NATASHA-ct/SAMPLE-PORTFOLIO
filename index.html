@@ -15,144 +15,131 @@
   <script src="./javascript/myportfolio.js" defer></script>
 
 <body>
+<nav class="nav">
 
-  <header class="header">
+  <!-- <h1 class="logo">NATASHA</h1> -->
+  <h2 class="logo"><img class="my-job-title" src="./background-shapes/desktop-version/logo.png" alt="logo"></h2>
+  <div class="menu">
+    <span class="block"></span>
+    <span class="block"></span>
+    <span class="block"></span>
+  </div>
 
-    <nav class="nav">
-      <div class="logo">Natasha</div>
+  <ul class="nav-list">
 
-      <div class="menu">
-        <span class="block"></span>
-        <span class="block"></span>
-        <span class="block"></span>
-      </div>
+    <div class="close-icon">
+      <a href="#" class="material-symbols-outlined close">
+        close
+      </a>
+    </div>
 
-      <ul class="nav-list">
+    <li><a class="nav-link" href="#portfolio"> Projects</a><span
+        class="material-symbols-outlined menu-arrow">chevron_right</span></li>
 
-        <div class="close-icon">
-          <a href="#" class="material-symbols-outlined close">
-            close
-          </a>
-        </div>
+    <li><a class="nav-link" href="#about"> About</a><span
+        class="material-symbols-outlined menu-arrow">chevron_right</span></li>
 
-        <li><a class="nav-link" href="https://docs.google.com/document/d/1kU4k9UDe1DzXcDF5nxolZPG-oJNTIhErDPZbYt59o7A/edit"> CV/Resume</a><span
-            class="material-symbols-outlined menu-arrow">chevron_right</span></li>
+    <li><a class="nav-link" href="#contact"> Contact</a><span
+        class="material-symbols-outlined menu-arrow">chevron_right</span></li>
 
-        <li><a class="nav-link" href="#portfolio"> Portfolio</a><span
-            class="material-symbols-outlined menu-arrow">chevron_right</span></li>
+    <li><a class="nav-link resume"
+        href="https://drive.google.com/file/d/17VwIh7HWS9WeQnwjH4G0JFezfyRNloCI/view?usp=sharing">
+        CV/Resume</a><span class="material-symbols-outlined menu-arrow">chevron_right</span></li>
 
-        <li><a class="nav-link" href="#about"> About</a><span
-            class="material-symbols-outlined menu-arrow">chevron_right</span></li>
+  </ul>
 
-        <li><a class="nav-link" href="#contact"> Contact</a><span
-            class="material-symbols-outlined menu-arrow">chevron_right</span></li>
+</nav>
+  <header class="header box">
 
-        <li><a class="mail-link" href="#contact"><img class="mail" src="./images/desktop/mail-button.png"
-              alt="clickable mail button"></a></li>
-      </ul>
-
-    </nav>
+   
 
     <!--About me-->
-    <section class="top-section" id="about">
-
-      <section class="introduction">
-        <h1 class="my-name">Natasha Chirombe</h1>
-        <h2 class="my-job-title">Full-stack Developer</h2>
-        <p class="my-ability">I can help you build a product , feature or website Look through some of my work and
-          experience!
-          If you like what you
-          see and have a project you need coded, don’t hestiate to contact me.</p>
-      </section>
-
-      <!--vector line-->
-      <div class="short1">
-        <img class="horizontal-line" src="./background-shapes/mobile-version/Vector 4.png" alt="horizontal-line">
+    <div class="nw-header">
+      <div class="top-section" id="about">
+            <section class="introduction">
+            <h2 class="my-name">Hi👋, </h2>
+            <h2 class="my-name">I'm Natasha Chirombe </h2>
+            <!-- <h2 class="my-job-title">Full-stack Developer</h2> -->
+            <h2 class="my-ability">turning ideas into real life products is my calling!</h2>
+            <br>
+            <button><a class="nav-link" href="#portfolio"> See my projects</a></button>
+          </section>
       </div>
 
+    <div class="all-skills">
+        <!--vector line-->
+        <div class="short1">
+          <img class="horizontal-line" src="./background-shapes/mobile-version/Vector 4.png" alt="horizontal-line">
+        </div>
+
+      <h2 class="t-skills"> Skills</h2>
       <div class="short2">
-        <img class="horizontal-line" src="./background-shapes/desktop-version/hr-1.png" alt="horizontal-line">
+          <img class="horizontal-line" src="./background-shapes/desktop-version/hr-1.png" alt="horizontal-line">
       </div>
 
-      <!--my skills-->
+        <!--my skills-->
 
-      <section class="my-skills">
+        <section class="my-skills">
+        
+          <div class="languages grow">
+            <p class="skill-title">Languages</p>
+            <ul class="skill-list">
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>Css</li>
+             <br>
+                           
+            </ul>
+          </div>
 
-        <div class="languages">
-          <p class="skill-title">Language</p>
-          <ul class="skill-list">
-            <li>Javascript</li>
-            <li>Ruby</li>
-            <li>Html</li>
-            <li>Css</li>
-          </ul>
+          <div class="frameworks grow">
+            <p class="skill-title">Frameworks</p>
+            <ul class="skill-list">
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>RSPec</li>
+              <li>CopyBara</li>
+              <li>Selenium</li>
+            </ul>
+          </div>
+
+          <div class="skills grow">
+            <p class="skill-title">VCS</p>
+            <ul class="skill-list">
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </div>
+        </section>
+
+        <!--vector line-->
+        <div class="short1">
+          <img class="horizontal-line" src="./background-shapes/mobile-version/Vector 4.png" alt="horizontal-line">
         </div>
 
-        <div class="frameworks">
-          <p class="skill-title">Frameworks</p>
-          <ul class="skill-list">
-            <li>Bootstrap</li>
-            <li>Ruby on Rails</li>
-            <li>RSPec</li>
-            <li>CopyBara</li>
-            <li>Selenium</li>
-          </ul>
-        </div>
-
-        <div class="skills">
-          <p class="skill-title">Skills</p>
-          <ul class="skill-list">
-            <li>Codekit</li>
-            <li>Github</li>
-            <li>Codepen</li>
-            <li>Gitlab</li>
-            <li>Terminal</li>
-          </ul>
-        </div>
-      </section>
-
-      <!--vector line-->
-      <div class="short1">
-        <img class="horizontal-line" src="./background-shapes/mobile-version/Vector 4.png" alt="horizontal-line">
-      </div>
-
-      <div class="short2">
-        <img class="horizontal-line" src="./background-shapes/desktop-version/hr-1.png" alt="horizontal-line">
-      </div>
-
-      <!-- <div class="supporting-items"> -->
-
-        <!-- <div class="go-to2">
-          <img class="arrow-down" src="./images/arrow-down.svg" alt="down pointing arrow" />
-          <h4 class="go-work">Work</h4>
-        </div> -->
-
-
+               
         <ul class="social">
-          <li><a href="https://github.com/NATASHA-ct"><img class="fa" src="./images/mobile/SOCIAL-ICONS/github.png" alt=" github icon"></a></li>
+            <li><a href="https://github.com/NATASHA-ct"><img class="fa" src="./images/mobile/SOCIAL-ICONS/github.png" alt=" github icon"></a></li>
 
-          <li><a href="https://www.linkedin.com/in/natashatatendachirombe/"><img class="fa" src="./images/mobile/SOCIAL-ICONS/linkedin.png" alt=" linkedin icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/natashatatendachirombe/"><img class="fa" src="./images/mobile/SOCIAL-ICONS/linkedin.png" alt=" linkedin icon"></a></li>
 
-          <li><a href="https://angel.co/u/natasha-tatenda-chirombe"><img class="fa" src="./images/mobile/SOCIAL-ICONS/peace.png" alt="peace icon"></a></li>
+            <li><a href="https://angel.co/u/natasha-tatenda-chirombe"><img class="fa" src="./images/mobile/SOCIAL-ICONS/peace.png" alt="peace icon"></a></li>
 
-          <li><a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/twitter.png" alt="twitter icon"></a></li>
-
-          <li><a href="https://medium.com/@natashachirombe"><img class="fa" src="./images/mobile/SOCIAL-ICONS/M.png" alt="M icon"></a></li>
+            <li><a href="https://medium.com/@natashachirombe"><img class="fa" src="./images/mobile/SOCIAL-ICONS/M.png" alt="M icon"></a></li>
 
         </ul>
-
-        <!-- <div class="go-to1">
-
-          <img class="arrow-down" src="./images/arrow-down.svg" alt="down pointing arrow" />
-          <h4 class="go-work">Work</h4>
-        </div> -->
-
-      </div>
-    </section>
+    </div>
+          
+      
+    </div>
 
   </header>
 
-  <main class="main" id="portfolio">
+  <main class="main box" id="portfolio">
     <div class="title">
       <h2 class="work-heading1">MY RECENT <br> WORK</h2>
       <h2 class="work-heading2">My recent work</h2>
@@ -170,7 +157,7 @@
     </div>
     <!--My Work Section Projects container-->
     <div class="work-section">
-      <div class="all-projects">
+      <div class="all-projects nw-all">
 
       </div>
     </div>
@@ -182,19 +169,34 @@
   </div>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="box footer">
 
     <section class="contact-section" id="contact">
 
-      <div class="contact-instructions">
+      <div class="contact-instructions square square-transition">
         <h2 class="contact-us">CONTACT US</h2>
         <h2 class="contact-us2">Let’s chat!</h2>
 
-        <p class="we-help">
+        <!-- <p class="we-help">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
-        </p>
+        </p> -->
+
+        <div class="contacts">
+          <a href="https://github.com/NATASHA-ct"><img class="fa" src="./images/mobile/SOCIAL-ICONS/github.png"
+              alt="github profile icon">  Github Profile</a>
+        
+          <a href="https://www.linkedin.com/in/natashatatendachirombe/"><img class="fa"
+              src="./images/mobile/SOCIAL-ICONS/linkedin.png" alt="linkedin profile icon">  Linkedin Profile</a>
+        
+          <a href="https://angel.co/u/natasha-tatenda-chirombe"><img class="fa" src="./images/mobile/SOCIAL-ICONS/peace.png"
+              alt="wellfound profile icom">  Wellfound Profile  </a>
+        
+          <a href="https://medium.com/@natashachirombe"><img class="fa" src="./images/mobile/SOCIAL-ICONS/M.png"
+              alt="medium profile icon">  Medium Profile</a>
+        
+        </div>
       </div>
 
       <!--contact form -->
@@ -226,18 +228,16 @@
     <!--social media icons-->
 
     <div class="bottom-footer">
-      <div class="social footer-icons">
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/github.png" alt="github icon"></a>
+      <!-- <div class="social footer-icons">
+        <a href="https://github.com/NATASHA-ct"><img class="fa" src="./images/mobile/SOCIAL-ICONS/github.png" alt="github icon"></a>
 
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/linkedin.png" alt="linkedin icon"></a>
+        <a href="https://www.linkedin.com/in/natashatatendachirombe/"><img class="fa" src="./images/mobile/SOCIAL-ICONS/linkedin.png" alt="linkedin icon"></a>
 
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/peace.png" alt="peace icon"></a>
+        <a href="https://angel.co/u/natasha-tatenda-chirombe"><img class="fa" src="./images/mobile/SOCIAL-ICONS/peace.png" alt="workfully"></a>
 
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/twitter.png" alt="twitter icon"></a>
+        <a href="https://medium.com/@natashachirombe"><img class="fa" src="./images/mobile/SOCIAL-ICONS/M.png" alt="M icon"></a>
 
-        <a href="#"><img class="fa" src="./images/mobile/SOCIAL-ICONS/M.png" alt="M icon"></a>
-
-      </div>
+      </div> -->
       <div class="my-email-container">
         <p class="my-email">ntascha23@gmail.com</p>
       </div>
