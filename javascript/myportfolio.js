@@ -142,7 +142,7 @@ const modal = () => {
   allprojects.innerHTML = cardportfolioObjects;
 };
 modal();
-{/* <button type="button" class="see-prj" data-index="0">See Project</button> */}
+
 // ...............MODAL POPUP for see project button....................
 const open = document.querySelectorAll(".see-prj");
 

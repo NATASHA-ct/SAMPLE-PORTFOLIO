@@ -1099,35 +1099,6 @@ button.button:disabled {
     
   }
 
-  /* .nw-all {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-  } */
-
-
-  /* .project-container {
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    width: 90%;
-  } */
-
-  /*
-  .project-image {
-    width: 55%;
-    max-height: 448px;
-    background-color: #fff;
-    order: 0;
-  } */
-
-  /* .description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    width: 45%;
-  } */
-
   /* second project */
   #project2 .project-image,
   #project6 .project-image {
