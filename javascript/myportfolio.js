@@ -33,9 +33,9 @@ const portfolioObjects = [
   {
     projectTitle: "project1",
     projectTitleDesktop: "Top-rated-tv-shows",
-    tags: ["HTML", "CSS", "Es6", "REST API"],
+    tags: ["HTML", "CSS", "Es6", "API"],
     description:
-      "A web app that allows users to engage with TV show info via an external API. Users can like shows and leave comments. The app uses an involvement API to save engagement data",
+      "Allows users to engage with TV show info via an external API.Users can like shows & leave comments.It uses an involvement API to save data",
     liveUrl: "https://natasha-ct.github.io/Top-rated-tv-shows-Web-app/dist/",
     sourceUrl: "https://github.com/NATASHA-ct/Top-rated-tv-shows-Web-app",
     image: "./images/projects/tv.png",
@@ -78,7 +78,7 @@ const portfolioObjects = [
     projectTitleDesktop: "Online Math Calculator",
     tags: ["HTML", "CSS", "Es6", "React"],
     description:
-      "Single Page App for math calculations and reading random math related quotes, offering quick & easy access to simple tools and resources",
+      "Single Page App for math calculations & reading random math related quotes, offering quick access to simple tools and resources",
     liveUrl: "https://phenomenal-rugelach-2147c0.netlify.app/",
     sourceUrl: "https://github.com/NATASHA-ct/REACT-Math-Calculator",
     image: "./images/projects/maths.png",
@@ -129,10 +129,11 @@ const modal = () => {
                             ${portfolioObjects[projectsIndex].tags[3]}
                         </li>  
                     </ul>
-                    
-                    <button type="button" class="button "><a href="${portfolioObjects[projectsIndex].liveUrl}">Live Preview</a></button>
-                    <button type="button" class="button SeeSource"><a href="${portfolioObjects[projectsIndex].sourceUrl}">Source Code</a></button>
-                
+                    <div class="proj-btns">
+                      <button type="button" class="button "><a href="${portfolioObjects[projectsIndex].liveUrl}">Live Preview</a></button>
+                      <button type="button" class="button SeeSource"><a href="${portfolioObjects[projectsIndex].sourceUrl}">Source Code</a></button>
+                    </div>
+             
                 
                 </div>
             </article>`;
