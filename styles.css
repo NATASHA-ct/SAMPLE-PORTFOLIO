@@ -10,6 +10,11 @@ html {
   color: #f5f5f5;
 }
 
+/* .resume { 
+  visibility: hidden;
+  animation: none;
+ } */
+
 body {
   width: 100%;
 }
@@ -130,6 +135,11 @@ a {
 
 .nav-list.active {
   transform: translateX(0%);
+  background-color: #01010e;
+    transform: translateX(0%);
+    font-size: 23px;
+    font-weight: 700;
+    color: #9fc4e4;
 }
 
 .nav-list li a {
