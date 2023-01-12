@@ -33,9 +33,9 @@ const portfolioObjects = [
   {
     projectTitle: "project1",
     projectTitleDesktop: "Top-rated-tv-shows",
-    tags: ["HTML", "CSS", "Es6", "REST API"],
+    tags: ["HTML", "CSS", "Es6", "API"],
     description:
-      "A web application that allows users to engage with information about TV shows through an external API. The application enables users to like TV shows and leave comments about their thoughts on them.An involvement API was utilized to save this engagement data.",
+      "Allows users to engage with TV show info via an external API.Users can like shows & leave comments.It uses an involvement API to save data",
     liveUrl: "https://natasha-ct.github.io/Top-rated-tv-shows-Web-app/dist/",
     sourceUrl: "https://github.com/NATASHA-ct/Top-rated-tv-shows-Web-app",
     image: "./images/projects/tv.png",
@@ -43,21 +43,21 @@ const portfolioObjects = [
 
   {
     projectTitle: "project2",
-    projectTitleDesktop: "Budget- App",
-    tags: ["Ruby", "Ruby on Rails", "Postgresql", "CSS3"],
+    projectTitleDesktop: "Daily Planner",
+    tags: ["Html", "CSS", "JavaScript", "Linter"],
     description:
-      " A web application that helps users manage their expenses by categorizing them and keeping track of transactions. The application allows the user to see how much money they have spent in each category, helping them to make informed decisions about their spending habits. The goal of the application is to empower users to take control of their finances and manage their lives effectively.",
-    liveUrl: "",
-    sourceUrl: "https://github.com/NATASHA-ct/budget-app",
-    image: "./images/projects/budget.png",
+      "A webapp for To-Do tasks built using webpack with functionality to add, remove, mark items as complete, and remove all completed items at once.",
+    liveUrl: "https://dulcet-churros-bc7c19.netlify.app/",
+    sourceUrl: "https://github.com/NATASHA-ct/Daily-planner",
+    image: "./images/projects/todo .png",
   },
 
   {
     projectTitle: "project3",
     projectTitleDesktop: "Online Shop",
-    tags: ["CSS", "HTML", "JavaScript ES6", "React"],
+    tags: ["CSS", "HTML", "ES6", "React"],
     description:
-      "A web application app that allows users to view and filter a list of products for sale using an external API. The application includes a page with a list of products that can be filtered using various parameters, as well as a page displaying detailed information about each individual product. The user can use the application to view metrics and find products that meet their specific criteria.",
+      "Web app for viewing & filtering products using external API, incl. list of products & detailed info pages. Users can filter & view metrics for specific criteria.",
     liveUrl: "https://prismatic-banoffee-c996a7.netlify.app/",
     sourceUrl: "https://github.com/NATASHA-ct/onlineshop",
     image: "./images/projects/onlineshop.png",
@@ -67,10 +67,10 @@ const portfolioObjects = [
     projectTitleDesktop: "Digital Library",
     tags: ["HTML", "CSS", "JavaScript", "React"],
     description:
-      "A web application developed using React and Redux that allows users to view a list of books, add new books, and remove selected books. The application has been tested using Jest. It provides users with a simple and convenient way to manage their book collection.",
+      "Web app using React & Redux to view, add, & remove books, test using Jest. Offers simple way to manage book collection",
     liveUrl: "https://deft-seahorse-76e953.netlify.app/",
     sourceUrl: "https://github.com/NATASHA-ct/DigitalLibrary",
-    image: "./images/projects/digitallib.png",
+    image: "./images/projects/lib.png",
   },
 
   {
@@ -78,7 +78,7 @@ const portfolioObjects = [
     projectTitleDesktop: "Online Math Calculator",
     tags: ["HTML", "CSS", "Es6", "React"],
     description:
-      "This a Single Page Application that allows users to perform simple calculations and read random quotes related to math. This app provides a quick and easy way for users to access these simple tools and resources.",
+      "Single Page App for math calculations & reading random math related quotes, offering quick access to simple tools and resources",
     liveUrl: "https://phenomenal-rugelach-2147c0.netlify.app/",
     sourceUrl: "https://github.com/NATASHA-ct/REACT-Math-Calculator",
     image: "./images/projects/maths.png",
@@ -88,7 +88,7 @@ const portfolioObjects = [
     projectTitleDesktop: "Business-Seminar-Website",
     tags: ["HTML", "CSS", "Es6", "Webpack"],
     description:
-      "Business-Seminar-Website that provides information about the event, including the dates, speakers, tickets, and attendance location. The goal of the seminar is to help people be productive at work while still maintaining a healthy work-life balance.",
+      "Business seminar website with info on dates, speakers, tickets, location. Goal is to help achieve productivity & balance in work & life.",
     liveUrl: "https://natasha-ct.github.io/Business-Seminar-Website/",
     sourceUrl: "https://github.com/NATASHA-ct/Business-Seminar-Website",
     image: "./images/projects/business.png",
@@ -111,9 +111,9 @@ const modal = () => {
                 <img class="project-image" src="${portfolioObjects[projectsIndex].image}" alt="project placeholder image">
                 </img>
 
-                <div class="description">
+                <div class="description layer">
                     <h3 class="project-title">${portfolioObjects[projectsIndex].projectTitleDesktop}
-                    </h2>
+                    </h3>
                     <p class="project-infor">${portfolioObjects[projectsIndex].description}</p>
                     <ul class="used-tools">
                         <li class="project-list">
@@ -129,9 +129,14 @@ const modal = () => {
                             ${portfolioObjects[projectsIndex].tags[3]}
                         </li>  
                     </ul>
-                    <button type="button" class="see-prj" data-index="0">See Project</button>
-                    </div></article>
-                </div>`;
+                    <div class="proj-btns">
+                      <button type="button" class="button "><a href="${portfolioObjects[projectsIndex].liveUrl}">Live Preview</a></button>
+                      <button type="button" class="button SeeSource"><a href="${portfolioObjects[projectsIndex].sourceUrl}">Source Code</a></button>
+                    </div>
+             
+                
+                </div>
+            </article>`;
     cardportfolioObjects += card;
   }
   allprojects.innerHTML = cardportfolioObjects;
@@ -255,3 +260,20 @@ contactForm.addEventListener("input", () => {
 clientName.value = localStorage.getItem("Name");
 clientEmail.value = localStorage.getItem("Email");
 message.value = localStorage.getItem("TextArea");
+// ....................
+
+const boxes = document.querySelectorAll('.box') 
+window.addEventListener('scroll',checkBoxes);
+ console.log(checkBoxes());
+
+function checkBoxes(){
+    const triggerBottom = window.innerHeight / 5 * 4;
+    boxes.forEach(box =>{
+        const boxTop = box.getBoundingClientRect().top;
+        if(boxTop < triggerBottom){
+            box.classList.add('show');
+        }else{
+            box.classList.remove('show');
+        }
+    })
+}
