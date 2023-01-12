@@ -1,6 +1,7 @@
 /* this is the fonts declartion */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import 'animate.css';
 
 html {
   width: 100%;
@@ -253,23 +254,6 @@ background-image: linear-gradient( -225deg, #cf3e95 0%, #103a7a 29%, #4019cc 67%
   color: #7697d1;
   line-height: 32px;
   text-align: center;
-
-    animation-duration: 3s;
-  animation-name: slidein;
-  animation-delay: 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
 }
 
 .horizontal-line {
@@ -495,7 +479,7 @@ background-image: linear-gradient( -225deg, #cf3e95 0%, #103a7a 29%, #4019cc 67%
 }
 
 .project-container:hover {
-  border: 4px solid #d094e6;
+  border: 2px solid #d094e6;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
