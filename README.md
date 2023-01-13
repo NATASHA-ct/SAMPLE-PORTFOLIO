@@ -17,18 +17,18 @@
 
 
 ### Prerequisites
--Github flow knowledge.
--Basic CSS and HTML.
--Basic JavaScript
--Installation of files.
+- Github flow knowledge.
+- Basic CSS and HTML.
+- Basic JavaScript
+- Installation of files.
 
 ### Setup
--To clone the repository run `[https://github.com/NATASHA-ct/MY-PORTFOLIO.git]` in your terminal
+- To clone the repository run `[https://github.com/NATASHA-ct/MY-PORTFOLIO.git]` in your terminal
 
 ### Install
--Set up Github Actions
--Set up linter > Lighthouse , Webhint ,Stylelint ,
--Added Eslint
+- Set up Github Actions
+- Set up linter > Lighthouse , Webhint ,Stylelint ,
+- Added Eslint
 
 👤 **Author**
 
